@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import type { Item } from "../schema";
+import { safeMedia } from "../schema";
 import {
   Avatar,
   Empty,
@@ -109,7 +110,7 @@ export function WeiboSkin(p: Props) {
       <div className="catalog-scroll">
         {tab === "我" ? (
           <div className="weibo-profile">
-            <Avatar name={p.owner ?? "我"} />
+            <Avatar name={p.owner ?? "我"} src={safeMedia(p.ownerAvatar || "")} />
             <h2>{p.owner ?? "我"}</h2>
             <span>{items.length} 条微博</span>
           </div>
@@ -264,7 +265,7 @@ export function FacebookSkin(p: Props) {
               disabled={!p.creator}
               onClick={p.onAdd}
             >
-              <Avatar name={p.owner ?? "我"} />
+              <Avatar name={p.owner ?? "我"} src={safeMedia(p.ownerAvatar || "")} />
               分享新动态
             </button>
             <div className="fb-stories">
@@ -304,7 +305,7 @@ export function FacebookSkin(p: Props) {
           <>
             <div className="fb-cover" />
             <div className="fb-profile">
-              <Avatar name={p.owner ?? "我"} />
+              <Avatar name={p.owner ?? "我"} src={safeMedia(p.ownerAvatar || "")} />
               <h1>{p.owner ?? "我"}</h1>
             </div>
             {items
