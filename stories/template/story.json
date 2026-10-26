@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "revision": 3,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -205,6 +205,13 @@
         "id": "note-november-plan",
         "title": "11月安排",
         "body": "11月1日：确认快递到齐，礼物包装好放在柜子里，记得销毁快递单！！\n\n11月2日：约赵光旭明天晚上出门，买好电影票，带上唇膏和外套。纸巾！还有护手霜！\n\n11月3日：和薛苏仁配合支开队友，然后告诉赵光旭让他借给我一天，最后回宿舍的时候送上礼物。",
+        "kind": "note",
+        "folder": "私人"
+      },
+      {
+        "id": "note-easter-egg",
+        "title": "给捡到手机的你",
+        "body": "既然你翻到了这条：礼物在柜子最下层，别告诉赵光旭我提前告诉你了 :)",
         "kind": "note",
         "folder": "私人"
       }
@@ -616,6 +623,52 @@
     ]
   },
   "variables": {},
-  "events": [],
-  "tests": []
+  "events": [
+    {
+      "id": "welcome-notify",
+      "label": "开场通知",
+      "type": "start",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：🐈‍⬛ 给你发来一条消息"
+        }
+      ]
+    },
+    {
+      "id": "read-easter-egg",
+      "label": "发现彩蛋",
+      "type": "event",
+      "event": "read",
+      "target": "note-easter-egg",
+      "next": [
+        "ending-easter-egg"
+      ]
+    },
+    {
+      "id": "ending-easter-egg",
+      "label": "彩蛋结局",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "🎉 彩蛋：你比赵光旭更早知道了礼物的位置"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "easter-egg",
+      "steps": [
+        {
+          "event": "read",
+          "target": "note-easter-egg"
+        }
+      ],
+      "ending": "🎉 彩蛋：你比赵光旭更早知道了礼物的位置"
+    }
+  ]
 }
