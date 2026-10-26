@@ -37,6 +37,7 @@ export type SkinProps = {
   onUi?: (key: string, value: UiValue) => void;
   appId?: string;
   owner?: string;
+  ownerAvatar?: string;
   virtualTime?: string;
   name: string;
   items: Item[];
@@ -419,7 +420,10 @@ export function WeChatSkin(p: SkinProps) {
           ) : (
             <>
               <div className="wx-profile">
-                <Avatar name={p.owner || "机主"} />
+                <Avatar
+                  name={p.owner || "机主"}
+                  src={safeMedia(p.ownerAvatar || "")}
+                />
                 <div>
                   <h2>{p.owner || "机主"}</h2>
                   <small>微信号：未设置</small>
