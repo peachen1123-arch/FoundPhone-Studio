@@ -142,6 +142,7 @@ function PhoneRuntime({
   const appSnapshots = useRef(new Map<string, HTMLElement>());
   const [banner, setBanner] = useState("");
   const noticesSeen = useRef(0);
+  const noticeApp = useRef("");
   const [contextApp, setContextApp] = useState("");
   const [deviceScale, setDeviceScale] = useState(0.84);
   const shell = useRef<HTMLDivElement>(null);
@@ -282,6 +283,9 @@ function PhoneRuntime({
       setLocked(false);
       setPinOpen(false);
       event("password", pin);
+      const target = noticeApp.current;
+      noticeApp.current = "";
+      if (target && installedApps.some((a) => a.id === target)) open(target);
     } else {
       setPinError("密码不正确");
       setPinOpen(true);
@@ -428,6 +432,9 @@ function PhoneRuntime({
                 setPinOpen={setPinOpen}
                 error={pinError}
                 onUnlock={unlock}
+                onNoticeOpen={(appId) => {
+                  noticeApp.current = appId;
+                }}
                 onLight={() => setPanel("light")}
                 onCamera={() => {
                   setQuickCamera(true);
@@ -555,10 +562,17 @@ function PhoneRuntime({
                     <SystemNotifications
                       notices={s.notifications}
                       apps={work.apps}
-                      onOpen={() => {
+                      onOpen={(appId) => {
                         setPanel("");
                         if (locked) beginUnlock();
-                        else if (installedApps.some((a) => a.id === "messages"))
+                        else if (
+                          appId &&
+                          installedApps.some((a) => a.id === appId)
+                        )
+                          open(appId);
+                        else if (
+                          installedApps.some((a) => a.id === "messages")
+                        )
                           open("messages");
                       }}
                       onDismiss={dismissNotice}
