@@ -394,12 +394,20 @@
     ],
     "weather": [
       {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "weather-baoshan",
+        "title": "保山市",
+        "body": "云南省保山市实时天气：晴，16°C（体感 15°C），湿度 73%，风速 2.7 km/h。数据来源 open-meteo。",
         "kind": "text",
-        "meta": {}
+        "meta": {
+          "locationLabel": "云南省保山市",
+          "temperature": "16",
+          "high": "27",
+          "low": "14",
+          "condition": "晴",
+          "sunrise": "07:27",
+          "hourly": "[{\"time\": \"02:00\", \"temperature\": \"16\", \"rain\": \"0%\", \"wind\": \"3 km/h\"}, {\"time\": \"03:00\", \"temperature\": \"15\", \"rain\": \"0%\", \"wind\": \"\"}, {\"time\": \"04:00\", \"temperature\": \"15\", \"rain\": \"0%\", \"wind\": \"\"}, {\"time\": \"05:00\", \"temperature\": \"15\", \"rain\": \"0%\", \"wind\": \"\"}, {\"time\": \"06:00\", \"temperature\": \"14\", \"rain\": \"0%\", \"wind\": \"\"}]",
+          "daily": "[{\"label\": \"今天\", \"low\": \"14\", \"high\": \"27\"}, {\"label\": \"明天\", \"low\": \"14\", \"high\": \"26\"}, {\"label\": \"后天\", \"low\": \"15\", \"high\": \"26\"}]"
+        }
       }
     ],
     "wallet": [
