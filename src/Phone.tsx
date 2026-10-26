@@ -980,6 +980,8 @@ function AppContent({
       )}
     </div>
   ) : null;
+  const ownerAvatar =
+    (work.data.contacts ?? []).find((c) => c.id === "owner-card")?.avatar ?? "";
   if (Skin)
     return (
       <>
@@ -988,6 +990,7 @@ function AppContent({
             <Skin
               appId={app.id}
               owner={work.phone.owner}
+              ownerAvatar={ownerAvatar}
               virtualTime={state.time}
               ui={state.ui?.[app.id]}
               onUi={creator ? undefined : onUi}
