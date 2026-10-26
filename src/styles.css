@@ -4918,3 +4918,9 @@ label {
   background: #e34f58;
   transform: rotate(135deg);
 }
+
+.wallpaper-rooftop {
+  background:
+    linear-gradient(180deg, #00000026 0%, #00000000 18%),
+    url("../wallpapers/rooftop.jpg") center / cover no-repeat;
+}
