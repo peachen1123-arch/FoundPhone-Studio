@@ -982,6 +982,9 @@ function AppContent({
   ) : null;
   const ownerAvatar =
     (work.data.contacts ?? []).find((c) => c.id === "owner-card")?.avatar ?? "";
+  const friendList = (work.data.contacts ?? [])
+    .filter((c) => c.id !== "owner-card")
+    .map((c) => c.title);
   if (Skin)
     return (
       <>
@@ -991,6 +994,7 @@ function AppContent({
               appId={app.id}
               owner={work.phone.owner}
               ownerAvatar={ownerAvatar}
+              friends={friendList}
               virtualTime={state.time}
               ui={state.ui?.[app.id]}
               onUi={creator ? undefined : onUi}
