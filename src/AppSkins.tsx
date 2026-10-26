@@ -38,6 +38,7 @@ export type SkinProps = {
   appId?: string;
   owner?: string;
   ownerAvatar?: string;
+  friends?: string[];
   virtualTime?: string;
   name: string;
   items: Item[];
@@ -172,7 +173,10 @@ export function WeChatSkin(p: SkinProps) {
     ),
   ];
   const contacts = [
-    ...new Set(p.items.map((i) => i.sender).filter((s) => s !== "我")),
+    ...new Set([
+      ...(p.friends ?? []),
+      ...p.items.map((i) => i.sender).filter((s) => s !== "我"),
+    ]),
   ];
   const posts = p.items.filter(
     (i) => i.folder === "朋友圈" || i.kind === "post",
