@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 import type { SkinProps } from "../AppSkins";
 import { Avatar, Media } from "./shared";
-import { makeItem, type Item } from "../schema";
+import { makeItem, safeMedia, type Item } from "../schema";
 import { useSkinState } from "../skinState";
 import "./threads-reference.css";
 export function ThreadsReference(p: SkinProps) {
@@ -330,7 +330,7 @@ export function ThreadsReference(p: SkinProps) {
             {tab === "个人主页" && (
               <>
                 <div className="tr-profile">
-                  <Avatar name={p.owner || "机主"} />
+                  <Avatar name={p.owner || "机主"} src={safeMedia(p.ownerAvatar || "")} />
                   <p>{p.owner}</p>
                 </div>
                 {feed
@@ -447,7 +447,7 @@ export function ThreadsReference(p: SkinProps) {
             </button>
           </header>
           <div className="tr-compose-content">
-            <Avatar name={p.owner || "机主"} />
+            <Avatar name={p.owner || "机主"} src={safeMedia(p.ownerAvatar || "")} />
             <div>
               <b>{p.owner}</b>
               <span className="tr-muted"> › 社群或话题</span>
