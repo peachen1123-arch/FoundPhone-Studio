@@ -1,4 +1,5 @@
 import { useState, type ComponentType } from "react";
+import { safeMedia } from "../schema";
 import {
   Plane,
   Wifi,
@@ -208,7 +209,23 @@ export function NativeSettings({
                 className="settings-account"
                 onClick={() => nav.push(work.phone.owner)}
               >
-                <span>{work.phone.owner.slice(0, 1)}</span>
+                <span className="settings-owner-avatar">
+                  {safeMedia(
+                    (work.data.contacts ?? []).find((c) => c.id === "owner-card")
+                      ?.avatar ?? "",
+                  ) ? (
+                    <img
+                      src={safeMedia(
+                        (work.data.contacts ?? []).find(
+                          (c) => c.id === "owner-card",
+                        )?.avatar ?? "",
+                      )}
+                      alt=""
+                    />
+                  ) : (
+                    work.phone.owner.slice(0, 1)
+                  )}
+                </span>
                 <div>
                   <strong>{work.phone.owner}</strong>
                   <small>Apple 账户、iCloud 与更多</small>
