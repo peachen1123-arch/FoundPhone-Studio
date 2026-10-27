@@ -358,7 +358,11 @@ export function BilibiliSkin(p: Props) {
   );
 }
 function VerticalVideo({ p, item }: { p: Props; item: Item }) {
-  const [liked, setLiked] = useSkinState<boolean>(p, `liked-${item.id}`, false),
+  const [liked, setLiked] = useSkinState<boolean>(
+      p,
+      `liked-${item.id}`,
+      item.meta?.liked === "1",
+    ),
     [saved, setSaved] = useSkinState<boolean>(p, `saved-${item.id}`, false);
   return (
     <article className="vertical-video">
@@ -368,7 +372,7 @@ function VerticalVideo({ p, item }: { p: Props; item: Item }) {
           aria-label={`作者${item.sender}`}
           onClick={() => p.onItem(item)}
         >
-          <Avatar name={item.sender} />
+          <Avatar name={item.sender} src={item.avatar} />
         </button>
         <button
           aria-label={`喜欢${item.title}`}
