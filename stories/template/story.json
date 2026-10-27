@@ -2466,7 +2466,8 @@
         "favorite": false,
         "meta": {
           "liked": "1",
-          "views": "1453851"
+          "views": "1453851",
+          "poster": "videos/tt-0.jpg"
         }
       },
       {
@@ -4017,7 +4018,8 @@
         ],
         "favorite": false,
         "meta": {
-          "liked": "1"
+          "liked": "1",
+          "poster": "videos/tt-1.jpg"
         }
       },
       {
@@ -5219,7 +5221,8 @@
         ],
         "favorite": false,
         "meta": {
-          "liked": "0"
+          "liked": "0",
+          "poster": "videos/tt-2.jpg"
         }
       },
       {
@@ -5907,7 +5910,8 @@
         ],
         "favorite": false,
         "meta": {
-          "liked": "1"
+          "liked": "1",
+          "poster": "videos/tt-3.jpg"
         }
       },
       {
@@ -8074,7 +8078,8 @@
         ],
         "favorite": false,
         "meta": {
-          "liked": "0"
+          "liked": "0",
+          "poster": "videos/tt-4.jpg"
         }
       }
     ],
