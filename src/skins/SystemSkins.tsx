@@ -611,7 +611,8 @@ export function ClockSkin(p: Props) {
 }
 export function RemindersSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "全部");
-  const [checked, setChecked] = useSkinState<string[]>(p, "checked", []);
+  const preset = items.filter((i) => i.read).map((i) => i.id);
+  const [checked, setChecked] = useSkinState<string[]>(p, "checked", preset);
   const list =
     tab === "已完成"
       ? items.filter((i) => checked.includes(i.id))
