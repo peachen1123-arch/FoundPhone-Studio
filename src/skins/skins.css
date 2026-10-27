@@ -3210,6 +3210,8 @@
   flex: 1;
   min-height: 0;
   overflow: auto;
+  touch-action: pan-y;
+  overscroll-behavior: contain;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
 }
