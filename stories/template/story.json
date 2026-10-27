@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 25,
+  "revision": 26,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -203,7 +203,7 @@
           "id": "msg-zhao-oldp6",
           "title": "",
           "body": "录音，你下一个",
-          "time": "2025-01-03 21:40",
+          "time": "2026-01-03 21:40",
           "sender": "",
           "senderId": "zhao"
         },
@@ -211,7 +211,7 @@
           "id": "msg-zhao-oldp7",
           "title": "",
           "body": "好",
-          "time": "2025-01-03 21:41",
+          "time": "2026-01-03 21:41",
           "sender": "",
           "senderId": "owner"
         },
@@ -219,7 +219,7 @@
           "id": "msg-zhao-oldp8",
           "title": "",
           "body": "你的唇膏放你房间桌子上了",
-          "time": "2025-01-03 22:05",
+          "time": "2026-01-03 22:05",
           "sender": "",
           "senderId": "owner"
         },
@@ -227,7 +227,7 @@
           "id": "msg-zhao-oldp9",
           "title": "",
           "body": "我没记错的话是你的",
-          "time": "2025-01-03 22:05",
+          "time": "2026-01-03 22:05",
           "sender": "",
           "senderId": "owner"
         },
@@ -235,7 +235,7 @@
           "id": "msg-zhao-oldp10",
           "title": "",
           "body": "忘录音棚里了",
-          "time": "2025-01-03 22:06",
+          "time": "2026-01-03 22:06",
           "sender": "",
           "senderId": "owner"
         },
@@ -243,7 +243,7 @@
           "id": "msg-zhao-oldp11",
           "title": "",
           "body": "是我的，不过这个不太好用，丢了也没关系",
-          "time": "2025-01-03 22:09",
+          "time": "2026-01-03 22:09",
           "sender": "",
           "senderId": "zhao"
         },
@@ -251,7 +251,7 @@
           "id": "msg-zhao-oldp12",
           "title": "",
           "body": "依泉白管，梅子味的。",
-          "time": "2025-01-03 22:10",
+          "time": "2026-01-03 22:10",
           "sender": "",
           "senderId": "owner"
         },
@@ -259,7 +259,7 @@
           "id": "msg-zhao-oldp13",
           "title": "",
           "body": "这个很好用，不介意跟我用一样的可以试试看",
-          "time": "2025-01-03 22:11",
+          "time": "2026-01-03 22:11",
           "sender": "",
           "senderId": "owner"
         },
@@ -267,7 +267,7 @@
           "id": "msg-zhao-oldp14",
           "title": "",
           "body": "好，我会试试的",
-          "time": "2025-01-03 22:14",
+          "time": "2026-01-03 22:14",
           "sender": "",
           "senderId": "zhao"
         },
@@ -275,7 +275,7 @@
           "id": "msg-zhao-oldp15",
           "title": "",
           "body": "？",
-          "time": "2025-01-09 20:02",
+          "time": "2026-01-09 20:02",
           "sender": "",
           "senderId": "owner"
         },
@@ -283,7 +283,7 @@
           "id": "msg-zhao-oldp16",
           "title": "",
           "body": "你买了吗？是不是落我包里了，我这里多了一支",
-          "time": "2025-01-09 20:02",
+          "time": "2026-01-09 20:02",
           "sender": "",
           "senderId": "owner"
         },
@@ -291,7 +291,7 @@
           "id": "msg-zhao-oldp17",
           "title": "",
           "body": "是我买了给你的",
-          "time": "2025-01-09 20:05",
+          "time": "2026-01-09 20:05",
           "sender": "",
           "senderId": "zhao"
         },
@@ -299,7 +299,7 @@
           "id": "msg-zhao-oldp18",
           "title": "",
           "body": "赵光旭",
-          "time": "2025-01-09 20:06",
+          "time": "2026-01-09 20:06",
           "sender": "",
           "senderId": "owner"
         },
@@ -307,7 +307,7 @@
           "id": "msg-zhao-oldp19",
           "title": "",
           "body": "嗯？",
-          "time": "2025-01-09 20:07",
+          "time": "2026-01-09 20:07",
           "sender": "",
           "senderId": "zhao"
         },
@@ -315,7 +315,7 @@
           "id": "msg-zhao-oldp20",
           "title": "",
           "body": "怎么了",
-          "time": "2025-01-09 20:07",
+          "time": "2026-01-09 20:07",
           "sender": "",
           "senderId": "zhao"
         },
@@ -323,7 +323,7 @@
           "id": "msg-zhao-oldp21",
           "title": "",
           "body": "你可以不用对我这么客气。",
-          "time": "2025-01-09 20:09",
+          "time": "2026-01-09 20:09",
           "sender": "",
           "senderId": "owner"
         },
@@ -331,7 +331,7 @@
           "id": "msg-zhao-oldp22",
           "title": "",
           "body": "我们早就是朋友了对么",
-          "time": "2025-01-09 20:09",
+          "time": "2026-01-09 20:09",
           "sender": "",
           "senderId": "owner"
         },
@@ -339,7 +339,7 @@
           "id": "msg-zhao-oldp23",
           "title": "",
           "body": "...",
-          "time": "2025-01-09 20:12",
+          "time": "2026-01-09 20:12",
           "sender": "",
           "senderId": "zhao"
         },
@@ -347,7 +347,7 @@
           "id": "msg-zhao-oldp24",
           "title": "",
           "body": "好",
-          "time": "2025-01-09 20:12",
+          "time": "2026-01-09 20:12",
           "sender": "",
           "senderId": "zhao"
         },
@@ -355,7 +355,7 @@
           "id": "msg-zhao-oldp25",
           "title": "",
           "body": "可是，我还是想对你好",
-          "time": "2025-01-09 20:13",
+          "time": "2026-01-09 20:13",
           "sender": "",
           "senderId": "zhao"
         },
@@ -363,7 +363,7 @@
           "id": "msg-zhao-oldp26",
           "title": "",
           "body": "那出门",
-          "time": "2025-01-09 20:15",
+          "time": "2026-01-09 20:15",
           "sender": "",
           "senderId": "owner"
         },
@@ -371,7 +371,7 @@
           "id": "msg-zhao-oldp27",
           "title": "",
           "body": "陪我吃饭吧。",
-          "time": "2025-01-09 20:15",
+          "time": "2026-01-09 20:15",
           "sender": "",
           "senderId": "owner"
         },
@@ -379,7 +379,7 @@
           "id": "msg-zhao-oldp28",
           "title": "",
           "body": "02比03，大一年对吧",
-          "time": "2025-02-01 23:41",
+          "time": "2026-02-01 23:41",
           "sender": "",
           "senderId": "owner"
         },
@@ -387,7 +387,7 @@
           "id": "msg-zhao-oldp29",
           "title": "",
           "body": "嗯当然了",
-          "time": "2025-02-01 23:42",
+          "time": "2026-02-01 23:42",
           "sender": "",
           "senderId": "zhao"
         },
@@ -395,7 +395,7 @@
           "id": "msg-zhao-oldp30",
           "title": "",
           "body": "所以按理说03年的人该叫02的哥没错",
-          "time": "2025-02-01 23:43",
+          "time": "2026-02-01 23:43",
           "sender": "",
           "senderId": "owner"
         },
@@ -403,7 +403,7 @@
           "id": "msg-zhao-oldp31",
           "title": "",
           "body": "对呀",
-          "time": "2025-02-01 23:44",
+          "time": "2026-02-01 23:44",
           "sender": "",
           "senderId": "zhao"
         },
@@ -411,7 +411,7 @@
           "id": "msg-zhao-oldp32",
           "title": "",
           "body": "怎么突然",
-          "time": "2025-02-01 23:44",
+          "time": "2026-02-01 23:44",
           "sender": "",
           "senderId": "zhao"
         },
@@ -419,7 +419,7 @@
           "id": "msg-zhao-oldp33",
           "title": "",
           "body": "说这个",
-          "time": "2025-02-01 23:44",
+          "time": "2026-02-01 23:44",
           "sender": "",
           "senderId": "zhao"
         },
@@ -427,7 +427,7 @@
           "id": "msg-zhao-oldp34",
           "title": "",
           "body": "可是你好像从来不会叫我哥",
-          "time": "2025-02-01 23:46",
+          "time": "2026-02-01 23:46",
           "sender": "",
           "senderId": "owner"
         },
@@ -435,7 +435,7 @@
           "id": "msg-zhao-oldp35",
           "title": "",
           "body": "叫哥太生疏了",
-          "time": "2025-02-01 23:48",
+          "time": "2026-02-01 23:48",
           "sender": "",
           "senderId": "zhao"
         },
@@ -443,7 +443,7 @@
           "id": "msg-zhao-oldp36",
           "title": "",
           "body": "颜秋越",
-          "time": "2025-02-01 23:48",
+          "time": "2026-02-01 23:48",
           "sender": "",
           "senderId": "zhao"
         },
@@ -451,9 +451,57 @@
           "id": "msg-zhao-oldp37",
           "title": "",
           "body": "我想和你更亲近一点",
-          "time": "2025-02-01 23:49",
+          "time": "2026-02-01 23:49",
           "sender": "",
           "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-newyear1",
+          "title": "",
+          "body": "新年快乐",
+          "time": "2026-01-01 00:01",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-newyear2",
+          "title": "",
+          "body": "新年快樂",
+          "time": "2026-01-01 00:02",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-newyear3",
+          "title": "",
+          "body": "群發嗎",
+          "time": "2026-01-01 00:03",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-newyear4",
+          "title": "",
+          "body": "新年快樂🎉天天开心呀",
+          "time": "2026-01-01 00:04",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-newyear5",
+          "title": "",
+          "body": "这个不是",
+          "time": "2026-01-01 00:05",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-newyear6",
+          "title": "",
+          "body": "你也是",
+          "time": "2026-01-01 00:06",
+          "sender": "",
+          "senderId": "owner"
         },
         {
           "id": "msg-zhao-old1",
