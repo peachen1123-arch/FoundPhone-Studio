@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 5,
+  "revision": 6,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -341,12 +341,63 @@
     ],
     "reminders": [
       {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "rem-plan-1",
+        "title": "10月25日：买礼物",
+        "body": "10月25日：买礼物",
+        "time": "2026-10-25 09:00",
+        "sender": "提醒事项",
+        "kind": "note",
+        "folder": "生日计划",
+        "read": true
+      },
+      {
+        "id": "rem-plan-2",
+        "title": "10月27日：预定餐厅和蛋糕",
+        "body": "10月27日：预定餐厅和蛋糕",
+        "time": "2026-10-27 09:00",
+        "sender": "提醒事项",
+        "kind": "note",
+        "folder": "生日计划",
+        "read": true
+      },
+      {
+        "id": "rem-plan-3",
+        "title": "10月30日：计划部署完成",
+        "body": "10月30日：计划部署完成",
+        "time": "2026-10-30 09:00",
+        "sender": "提醒事项",
+        "kind": "note",
+        "folder": "生日计划",
+        "read": true
+      },
+      {
+        "id": "rem-plan-4",
+        "title": "11月2日：和薛苏仁商量好",
+        "body": "11月2日：和薛苏仁商量好",
+        "time": "2026-11-02 09:00",
+        "sender": "提醒事项",
+        "kind": "note",
+        "folder": "生日计划",
+        "read": true
+      },
+      {
+        "id": "rem-plan-5",
+        "title": "11月3日：带外套和唇膏，还有护手霜",
+        "body": "11月3日：带外套和唇膏，还有护手霜",
+        "time": "2026-11-03 09:00",
+        "sender": "提醒事项",
+        "kind": "note",
+        "folder": "生日计划",
+        "read": true
+      },
+      {
+        "id": "rem-plan-todo",
+        "title": "11月3日：到餐厅和服务员商量好送蛋糕的时间。",
+        "body": "11月3日：到餐厅和服务员商量好送蛋糕的时间。",
+        "time": "2026-11-03 18:00",
+        "sender": "提醒事项",
+        "kind": "note",
+        "folder": "生日计划"
       }
     ],
     "files": [
@@ -726,6 +777,11 @@
           "type": "notification",
           "key": "",
           "value": "微信：🐈‍⬛ 给你发来一条消息"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "提醒事项：到餐厅和服务员商量好送蛋糕的时间。"
         }
       ]
     },
