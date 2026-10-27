@@ -96,8 +96,8 @@ export function TaobaoSkin(p: Props) {
   const list = items
     .filter((i) =>
       tab === "商品"
-        ? i.folder !== "订单" && i.folder !== "物流"
-        : i.folder === tab,
+        ? i.folder !== "订单" && i.folder !== "訂單" && i.folder !== "物流"
+        : i.folder === tab || (tab === "订单" && i.folder === "訂單"),
     )
     .filter((i) => status === "全部" || meta(i, "status") === status);
   return (
