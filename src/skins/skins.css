@@ -4130,3 +4130,10 @@
 .catalog-slot[hidden] {
   display: none;
 }
+.vertical-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
