@@ -1,6 +1,6 @@
 import { NativeComposer } from "./DeviceSystem";
 import { useSkinState } from "./skinState";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import {
   ChevronLeft,
   Plus,
@@ -100,12 +100,15 @@ function MessageList({
 }) {
   return (
     <div className={`skin-messages ${whatsapp ? "wa-wallpaper" : ""}`}>
-      <div className="skin-date">{items[0]?.time.slice(0, 10)}</div>
-      {items.map((i) => (
-        <div
-          key={i.id}
-          className={`skin-message ${i.outgoing ? "outgoing" : ""}`}
-        >
+      {items.map((i, index) => {
+        const day = i.time.slice(0, 10);
+        const prevDay = index > 0 ? items[index - 1].time.slice(0, 10) : "";
+        return (
+          <Fragment key={i.id}>
+            {day !== prevDay && <div className="skin-date">{day}</div>}
+            <div
+              className={`skin-message ${i.outgoing ? "outgoing" : ""}`}
+            >
           {!whatsapp && !i.outgoing && (
             <Avatar name={i.sender} src={i.avatar} />
           )}
@@ -130,7 +133,9 @@ function MessageList({
           </button>
           {!whatsapp && i.outgoing && <Avatar name={i.sender} src={i.avatar} />}
         </div>
-      ))}
+          </Fragment>
+        );
+      })}
     </div>
   );
 }
