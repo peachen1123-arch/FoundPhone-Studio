@@ -376,7 +376,7 @@ function VerticalVideo({
   return (
     <article className="vertical-video">
       {active || !poster ? (
-        <Media item={item} />
+        <Media item={item} className={item.meta?.fit === "contain" ? "vertical-contain" : ""} />
       ) : (
         <img className="vertical-poster" loading="lazy" alt={item.title} src={poster} />
       )}
