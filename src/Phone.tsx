@@ -1021,6 +1021,7 @@ function AppContent({
               onBack={onBack}
               thread={thread}
               onThread={setThread}
+              readIds={state.read}
             />
           </Suspense>
         </div>
