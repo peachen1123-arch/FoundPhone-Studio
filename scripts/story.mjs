@@ -103,6 +103,11 @@ try {
   } else if (mode === "build") {
     await mkdir("public", { recursive: true });
     await writeFile("public/work.json", JSON.stringify(work, null, 2) + "\n");
+    const { gzipSync } = await import("node:zlib");
+    await writeFile(
+      "public/work.json.gz",
+      gzipSync(Buffer.from(JSON.stringify(work, null, 2)), { level: 9 }),
+    );
     const blank = compileStory(
       JSON.parse(await readFile("stories/blank/story.json", "utf8")),
     ).work;
