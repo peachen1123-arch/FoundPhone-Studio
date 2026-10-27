@@ -129,7 +129,6 @@ export function DeviceLock({
           <div className="lock-notifications">
             {work.phone.notifications && (
               <SystemNotifications
-                compact
                 notices={notices}
                 apps={work.apps}
                 onOpen={(appId) => {
