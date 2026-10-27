@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 11,
+  "revision": 12,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -196,6 +196,110 @@
           "title": "",
           "body": "等我一下我现在过来",
           "time": "2025-12-27 12:05",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-1228-1",
+          "title": "",
+          "body": "啊我没想到自己会喝这么多...昨天送我回来很累吧，还睡了你的床！",
+          "time": "2025-12-28 12:00",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-1228-2",
+          "title": "",
+          "body": "不好意思呀。",
+          "time": "2025-12-28 12:01",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-1228-3",
+          "title": "",
+          "body": "唔緊要，蘇仁同哲逸都有幫我",
+          "time": "2025-12-28 12:02",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-1228-4",
+          "title": "",
+          "body": "想喝什么？我记得你喜欢喝珍珠奶茶来着，几分糖？",
+          "time": "2025-12-28 12:04",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-1228-5",
+          "title": "",
+          "body": "唔使多謝我喋，大家都係隊友，只係順手幫下咋～",
+          "time": "2025-12-28 12:06",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-1228-6",
+          "title": "",
+          "body": "如果是要感谢我的话不用了啦，都是队友了顺手帮忙而已～",
+          "time": "2025-12-28 12:07",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-1228-7",
+          "title": "",
+          "body": "不好意思，我突然意识到你是不是看不太懂...",
+          "time": "2025-12-28 12:08",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-1228-8",
+          "title": "",
+          "body": "是有点...但是还好啦，我有豆老师",
+          "time": "2025-12-28 12:09",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-1228-9",
+          "title": "",
+          "body": "是我想喝的，两杯够起送费，帮我一下？",
+          "time": "2025-12-28 12:10",
+          "sender": "",
+          "senderId": "zhao"
+        },
+        {
+          "id": "msg-zhao-1228-10",
+          "title": "",
+          "body": "🤭",
+          "time": "2025-12-28 12:11",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-1228-11",
+          "title": "",
+          "body": "你酒醒了吗？",
+          "time": "2025-12-28 12:12",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-1228-12",
+          "title": "",
+          "body": "真的想谢谢我的话，陪我出门帮我挑个耳饰怎么样？刚好我们顺路去买喝的",
+          "time": "2025-12-28 12:13",
+          "sender": "",
+          "senderId": "owner"
+        },
+        {
+          "id": "msg-zhao-1228-13",
+          "title": "",
+          "body": "5分钟！我换个衣服。",
+          "time": "2025-12-28 12:14",
           "sender": "",
           "senderId": "zhao"
         },
