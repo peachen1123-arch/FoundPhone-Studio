@@ -4941,3 +4941,18 @@ label {
   height: 100%;
   object-fit: cover;
 }
+
+.skin-thread {
+  display: contents;
+}
+.wechat-ui .skin-thread {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: block;
+  padding: 6px 10px 2px;
+  scrollbar-width: none;
+}
+.wechat-ui .skin-thread::-webkit-scrollbar {
+  display: none;
+}
