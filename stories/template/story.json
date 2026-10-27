@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 12,
+  "revision": 13,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -178,7 +178,7 @@
         {
           "id": "msg-zhao-old3",
           "title": "",
-          "body": "我都有諗過我會出道😭",
+          "body": "我都冇諗過我會出道😭",
           "time": "2025-12-27 12:03",
           "sender": "",
           "senderId": "owner"
