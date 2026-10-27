@@ -357,7 +357,16 @@ export function BilibiliSkin(p: Props) {
     </div>
   );
 }
-function VerticalVideo({ p, item }: { p: Props; item: Item }) {
+function VerticalVideo({
+  p,
+  item,
+  active,
+}: {
+  p: Props;
+  item: Item;
+  active: boolean;
+}) {
+  const poster = safeMedia(item.meta?.poster || "");
   const [liked, setLiked] = useSkinState<boolean>(
       p,
       `liked-${item.id}`,
@@ -366,7 +375,11 @@ function VerticalVideo({ p, item }: { p: Props; item: Item }) {
     [saved, setSaved] = useSkinState<boolean>(p, `saved-${item.id}`, false);
   return (
     <article className="vertical-video">
-      <Media item={item} />
+      {active || !poster ? (
+        <Media item={item} />
+      ) : (
+        <img className="vertical-poster" loading="lazy" alt={item.title} src={poster} />
+      )}
       <div className="vertical-actions">
         <button
           aria-label={`作者${item.sender}`}
@@ -437,8 +450,8 @@ function VerticalFeed({ p, items }: { p: Props; items: Item[] }) {
   }, [active, items.length]);
   return (
     <div className="vertical-feed" ref={ref} data-active={active}>
-      {items.map((i) => (
-        <VerticalVideo key={i.id} p={p} item={i} />
+      {items.map((i, idx) => (
+        <VerticalVideo key={i.id} p={p} item={i} active={idx === active} />
       ))}
       <Empty items={items} />
     </div>
