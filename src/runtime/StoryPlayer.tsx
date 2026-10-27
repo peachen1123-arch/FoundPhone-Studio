@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Phone } from "../Phone";
 import { validateWork, type Work } from "../schema";
+import { loadWorkJson } from "../loadWork";
 import "../styles.css";
 import "./player.css";
 function StoryPlayer() {
@@ -9,27 +10,32 @@ function StoryPlayer() {
     [error, setError] = useState("");
   useEffect(() => {
     const abort = new AbortController();
-    fetch(
-      new URLSearchParams(location.search).get("preview") === "test"
-        ? "./test-work.json"
-        : new URLSearchParams(location.search).get("template") === "blank"
-          ? "./blank-work.json"
-          : "./work.json",
-      { signal: abort.signal },
-    )
-      .then((r) => {
-        if (!r.ok) throw Error("缺少作品文件，请运行 npm run story:build");
-        return r.json();
-      })
-      .then((x) => {
+    (async () => {
+      let x: unknown;
+      try {
+        const mode = new URLSearchParams(location.search);
+        const url =
+          mode.get("preview") === "test"
+            ? "./test-work.json"
+            : mode.get("template") === "blank"
+              ? "./blank-work.json"
+              : "./work.json.gz";
+        if (url === "./work.json.gz") {
+          x = await loadWorkJson();
+        } else {
+          const r = await fetch(url, { signal: abort.signal });
+          if (!r.ok) throw Error("缺少作品文件，请刷新重试");
+          x = await r.json();
+        }
         const w = validateWork(x);
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";
         setWork(w);
-      })
-      .catch((e) => {
-        if (e.name !== "AbortError") setError(String(e));
-      });
+      } catch (e) {
+        if ((e as Error).name !== "AbortError")
+          setError(String(e) + "，请刷新重试");
+      }
+    })();
     return () => abort.abort();
   }, []);
   return (
