@@ -3854,9 +3854,11 @@ label {
   background: #ededed;
 }
 .wx-chat-row,
+.contact-row,
 .wx-contact {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 11px;
   width: 100%;
   padding: 13px 13px;
