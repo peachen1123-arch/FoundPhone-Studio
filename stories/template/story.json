@@ -3,11 +3,11 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 14,
+  "revision": 15,
   "phone": {
     "owner": "qctumnnn",
-    "date": "2026-11-03",
-    "time": "09:41",
+    "date": "2026-11-07",
+    "time": "13:05",
     "passcode": "1103",
     "battery": 94,
     "network": "5G",
@@ -389,7 +389,7 @@
           "id": "msg-zhao-1107-1",
           "title": "",
           "body": "我到了，等你。",
-          "time": "2026-11-07 19:42",
+          "time": "2026-11-07 13:03",
           "sender": "",
           "senderId": "zhao"
         }
@@ -547,7 +547,7 @@
         "id": "rem-plan-todo",
         "title": "11月3日：到餐厅和服务员商量好送蛋糕的时间。",
         "body": "11月3日：到餐厅和服务员商量好送蛋糕的时间。",
-        "time": "2026-11-03 18:00",
+        "time": "2026-11-03 17:40",
         "sender": "提醒事项",
         "kind": "note",
         "folder": "生日计划"
