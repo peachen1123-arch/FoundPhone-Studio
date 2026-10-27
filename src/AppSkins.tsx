@@ -1,6 +1,6 @@
 import { NativeComposer } from "./DeviceSystem";
 import { useSkinState } from "./skinState";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import {
   ChevronLeft,
   Plus,
@@ -49,6 +49,7 @@ export type SkinProps = {
   onBack: () => void;
   thread: string;
   onThread: (s: string) => void;
+  readIds?: string[];
 };
 function Avatar({
   name,
@@ -170,10 +171,50 @@ export function WeChatSkin(p: SkinProps) {
     "readThreads",
     [],
   );
+  const [seenCount, setSeenCount] = useSkinState<string[]>(p, "seen", []);
+  const prevReadIds = useRef<string[]>(p.readIds ?? []);
+  useEffect(() => {
+    const ids = p.readIds ?? [];
+    if (ids.length > prevReadIds.current.length) {
+      setReadThreads((v) =>
+        v.filter((t) =>
+          p.items.some((i) => i.title === t && ids.includes(i.id)),
+        ),
+      );
+      setSeenCount(() =>
+        [...new Set(p.items.map((i) => i.title))].filter((t) =>
+          p.items.some((i) => i.title === t && ids.includes(i.id)),
+        ),
+      );
+    }
+    prevReadIds.current = ids;
+  }, [p.readIds, p.items, setReadThreads, setSeenCount]);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const toBottom = () => {
+      el.scrollTop = el.scrollHeight;
+    };
+    toBottom();
+    const t1 = window.setTimeout(toBottom, 300);
+    const t2 = window.setTimeout(toBottom, 800);
+    const onImg = (e: Event) => {
+      if ((e.target as HTMLElement).tagName === "IMG") toBottom();
+    };
+    el.addEventListener("load", onImg, true);
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+      el.removeEventListener("load", onImg, true);
+    };
+  }, [p.thread, p.items.length]);
   const conversations = [
     ...new Set(
       p.items
-        .filter((i) => !["朋友圈", "我"].includes(i.folder))
+        .slice()
+        .sort((a, b) => a.time.localeCompare(b.time))
+        .reverse()
         .map((i) => i.title),
     ),
   ];
@@ -287,12 +328,14 @@ export function WeChatSkin(p: SkinProps) {
         </div>
       ) : p.thread ? (
         <>
-          <MessageList
-            items={p.items.filter((i) => i.title === p.thread)}
-            creator={p.creator}
-            onItem={p.onItem}
-            onRead={p.onRead}
-          />
+          <div className="skin-thread" ref={scrollRef}>
+            <MessageList
+              items={p.items.filter((i) => i.title === p.thread)}
+              creator={p.creator}
+              onItem={p.onItem}
+              onRead={p.onRead}
+            />
+          </div>
           <Compose creator={p.creator} onAdd={p.onAdd} />
         </>
       ) : moments ? (
@@ -355,6 +398,9 @@ export function WeChatSkin(p: SkinProps) {
                       key={t}
                       onClick={() => {
                         setReadThreads((v) => (v.includes(t) ? v : [...v, t]));
+                        setSeenCount((v) =>
+                          v.includes(t) ? v : [...v, t],
+                        );
                         p.onThread(t);
                         p.onRead(t);
                       }}
@@ -362,10 +408,8 @@ export function WeChatSkin(p: SkinProps) {
                       <span className="wx-chat-avatar">
                         <Avatar name={t} src={last.avatar} />
                         {!readThreads.includes(t) &&
-                          list.some((i) => !i.read) && (
-                            <b className="wx-unread">
-                              {list.filter((i) => !i.read).length}
-                            </b>
+                          !seenCount.includes(t) && (
+                            <b className="wx-unread">1</b>
                           )}
                       </span>
                       <div>
