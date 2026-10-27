@@ -2,16 +2,13 @@ import { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Phone } from "./Phone";
 import { validateWork, type Work } from "./schema";
+import { loadWorkJson } from "./loadWork";
 import "./styles.css";
 function Player() {
   const [work, setWork] = useState<Work | null>(null);
   const [error, setError] = useState("");
   useEffect(() => {
-    fetch("./work.json")
-      .then((r) => {
-        if (!r.ok) throw Error("缺少 work.json");
-        return r.json();
-      })
+    loadWorkJson()
       .then((x) => {
         const w = validateWork(x);
         document.title = w.title;
