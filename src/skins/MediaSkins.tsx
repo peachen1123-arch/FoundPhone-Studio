@@ -16,7 +16,7 @@ import {
   Users,
   Video,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { safeMedia, type Item } from "../schema";
 import {
   Avatar,
@@ -403,6 +403,47 @@ function VerticalVideo({ p, item }: { p: Props; item: Item }) {
     </article>
   );
 }
+function VerticalFeed({ p, items }: { p: Props; items: Item[] }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const pick = () => {
+      const mid = el.scrollTop + el.clientHeight / 2;
+      let best = 0;
+      Array.from(el.children).forEach((c, idx) => {
+        const h = c as HTMLElement;
+        if (!h.classList.contains("vertical-video")) return;
+        if (h.offsetTop <= mid) best = idx;
+      });
+      setActive(best);
+    };
+    pick();
+    el.addEventListener("scroll", pick, { passive: true });
+    return () => el.removeEventListener("scroll", pick);
+  }, [items.length]);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    Array.from(el.querySelectorAll(":scope > .vertical-video")).forEach(
+      (node, idx) => {
+        const v = node.querySelector("video");
+        if (!v) return;
+        if (idx === active) void v.play().catch(() => {});
+        else v.pause();
+      },
+    );
+  }, [active, items.length]);
+  return (
+    <div className="vertical-feed" ref={ref} data-active={active}>
+      {items.map((i) => (
+        <VerticalVideo key={i.id} p={p} item={i} />
+      ))}
+      <Empty items={items} />
+    </div>
+  );
+}
 export function DouyinSkin(p: Props) {
   const { tab, setTab, items } = useContent(p, "推荐");
   const list = tab === "推荐" ? items : items.filter((i) => i.folder === tab);
@@ -420,12 +461,7 @@ export function DouyinSkin(p: Props) {
           </button>
         ))}
       </div>
-      <div className="vertical-feed">
-        {list.map((i) => (
-          <VerticalVideo key={i.id} p={p} item={i} />
-        ))}
-        <Empty items={list} />
-      </div>
+      <VerticalFeed p={p} items={list} />
       <Tabs
         tabs={["推荐", "关注", "我"]}
         value={tab}
@@ -460,12 +496,7 @@ export function TikTokSkin(p: Props) {
           For You
         </button>
       </div>
-      <div className="vertical-feed">
-        {list.map((i) => (
-          <VerticalVideo key={i.id} p={p} item={i} />
-        ))}
-        <Empty items={list} />
-      </div>
+      <VerticalFeed p={p} items={list} />
       <Tabs
         tabs={["For You", "Following", "Profile"]}
         value={tab}
