@@ -5,7 +5,7 @@
   "description": "僅用於介面測試，不含劇情",
   "category": "互动手机故事",
   "cover": "",
-  "updatedAt": 34,
+  "updatedAt": 35,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -620,13 +620,15 @@
     ],
     "calendar": [
       {
-        "id": "test-item-calendar",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
+        "id": "cal-nov3-zhao",
+        "title": "🐈‍⬛",
+        "body": "他说下午三点到。",
         "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
+        "meta": {
+          "location": ""
+        },
+        "time": "2026-11-03 15:00",
+        "sender": "qctumnnn",
         "avatar": "",
         "kind": "text",
         "media": "",
