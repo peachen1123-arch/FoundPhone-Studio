@@ -102,11 +102,44 @@ try {
     );
   } else if (mode === "build") {
     await mkdir("public", { recursive: true });
-    await writeFile("public/work.json", JSON.stringify(work, null, 2) + "\n");
+    // 大图抽离：把 >24KB 的 data: 图片挪到 public/media/<hash>.<ext>，
+    // 主包只保留引用，避免每次打开都要先下载整包图片。
+    const BIG = 24 * 1024;
+    const { createHash } = await import("node:crypto");
+    const assets = new Map(); // filename -> Buffer
+    const walk = (node) => {
+      if (Array.isArray(node)) return node.map(walk);
+      if (node && typeof node === "object") {
+        for (const k of Object.keys(node)) node[k] = walk(node[k]);
+        return node;
+      }
+      if (typeof node !== "string" || !node.startsWith("data:") || node.length < BIG)
+        return node;
+      const m = /^data:(image\/[a-z+]+);base64,([\s\S]+)$/.exec(node);
+      if (!m) return node;
+      const buf = Buffer.from(m[2], "base64");
+      if (buf.length < BIG) return node;
+      const ext = m[1].split("/")[1].replace("jpeg", "jpg");
+      const hash = createHash("sha1").update(buf).digest("hex").slice(0, 12);
+      const name = `${hash}.${ext}`;
+      assets.set(name, buf);
+      return `media/${name}`;
+    };
+    const slim = walk(work);
+    if (assets.size) {
+      await mkdir("public/media", { recursive: true });
+      for (const [name, buf] of assets) await writeFile(`public/media/${name}`, buf);
+    }
+    console.log(`  抽离大图 ${assets.size} 张 → public/media/`);
+    await writeFile("public/work.json", JSON.stringify(slim, null, 2) + "\n");
     const { gzipSync } = await import("node:zlib");
     await writeFile(
       "public/work.json.gz",
-      gzipSync(Buffer.from(JSON.stringify(work, null, 2)), { level: 9 }),
+      gzipSync(Buffer.from(JSON.stringify(slim, null, 2)), { level: 9 }),
+    );
+    await writeFile(
+      "public/app-data.gz",
+      gzipSync(Buffer.from(JSON.stringify(slim, null, 2)), { level: 9 }),
     );
     const blank = compileStory(
       JSON.parse(await readFile("stories/blank/story.json", "utf8")),
