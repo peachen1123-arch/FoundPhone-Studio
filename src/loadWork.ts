@@ -11,6 +11,13 @@ async function parseMaybeGzip(r: Response): Promise<unknown> {
 }
 
 export async function loadWorkJson(): Promise<unknown> {
+  // 优先拉新文件名（绕开 CDN 对旧 work.json.gz 的顽固缓存）
+  try {
+    const r = await fetch("./app-data.gz");
+    if (r.ok) return await parseMaybeGzip(r);
+  } catch {
+    /* fall through */
+  }
   try {
     const r = await fetch("./work.json.gz");
     if (r.ok) return await parseMaybeGzip(r);
