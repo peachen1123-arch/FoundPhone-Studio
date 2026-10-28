@@ -125,17 +125,20 @@ try {
       assets.set(name, buf);
       return `media/${name}`;
     };
-    const slim = walk(work);
+    const slim = walk(structuredClone(work));
     if (assets.size) {
       await mkdir("public/media", { recursive: true });
       for (const [name, buf] of assets) await writeFile(`public/media/${name}`, buf);
     }
     console.log(`  抽离大图 ${assets.size} 张 → public/media/`);
-    await writeFile("public/work.json", JSON.stringify(slim, null, 2) + "\n");
+    // 双轨兼容：
+    // - app-data.gz：瘦身版（media/ 引用），新前端秒开
+    // - work.json / work.json.gz：图片内嵌完整版，兼容手机上未更新的旧 Service Worker
+    await writeFile("public/work.json", JSON.stringify(work, null, 2) + "\n");
     const { gzipSync } = await import("node:zlib");
     await writeFile(
       "public/work.json.gz",
-      gzipSync(Buffer.from(JSON.stringify(slim, null, 2)), { level: 9 }),
+      gzipSync(Buffer.from(JSON.stringify(work, null, 2)), { level: 9 }),
     );
     await writeFile(
       "public/app-data.gz",
