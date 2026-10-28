@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 34,
+  "revision": 35,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -1356,12 +1356,15 @@
     ],
     "calendar": [
       {
-        "id": "test-item-calendar",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
+        "id": "cal-nov3-zhao",
+        "title": "🐈‍⬛",
+        "body": "他说下午三点到。",
+        "sender": "qctumnnn",
         "kind": "text",
-        "meta": {}
+        "time": "2026-11-03 15:00",
+        "meta": {
+          "location": ""
+        }
       }
     ],
     "mail": [
