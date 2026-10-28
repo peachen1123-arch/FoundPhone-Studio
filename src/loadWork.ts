@@ -1,9 +1,9 @@
 async function parseMaybeGzip(r: Response): Promise<unknown> {
-  const text = await r.text();
-  const trimmed = text.trimStart();
-  if (trimmed.startsWith("{") || trimmed.startsWith("[")) return JSON.parse(text);
-  // 数据是 gzip 二进制（服务器未自动解压），手动解压
-  const buf = await (await fetch(r.url)).arrayBuffer();
+  // 只读一次响应体：避免 gzip 场景下重新 fetch 造成双倍下载
+  const buf = await r.arrayBuffer();
+  const head = new Uint8Array(buf.slice(0, 2));
+  const isGzip = head[0] === 0x1f && head[1] === 0x8b;
+  if (!isGzip) return JSON.parse(new TextDecoder().decode(buf));
   const stream = new Blob([buf])
     .stream()
     .pipeThrough(new DecompressionStream("gzip"));
