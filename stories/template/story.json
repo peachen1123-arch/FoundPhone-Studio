@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 35,
+  "revision": 36,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -544,14 +544,6 @@
           "senderId": "zhao"
         },
         {
-          "id": "msg-zhao-oldp25",
-          "title": "",
-          "body": "可是，我还是想对你好",
-          "time": "2026-01-09 20:13",
-          "sender": "",
-          "senderId": "zhao"
-        },
-        {
           "id": "msg-zhao-oldp26",
           "title": "",
           "body": "那出门",
@@ -636,14 +628,6 @@
           "title": "",
           "body": "颜秋越",
           "time": "2026-02-01 23:48",
-          "sender": "",
-          "senderId": "zhao"
-        },
-        {
-          "id": "msg-zhao-oldp37",
-          "title": "",
-          "body": "我想和你更亲近一点",
-          "time": "2026-02-01 23:49",
           "sender": "",
           "senderId": "zhao"
         },
