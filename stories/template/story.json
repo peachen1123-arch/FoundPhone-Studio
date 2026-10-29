@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 38,
+  "revision": 39,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -2036,7 +2036,7 @@
         {
           "id": "msg-zhao-mar3-26",
           "title": "🐈‍⬛",
-          "body": "没关系的我会合好",
+          "body": "没关系的我等会就好",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2060,7 +2060,7 @@
         {
           "id": "msg-zhao-mar3-27",
           "title": "🐈‍⬛",
-          "body": "你说的我听进去",
+          "body": "你说的我有听进去",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2084,7 +2084,7 @@
         {
           "id": "msg-zhao-mar3-28",
           "title": "🐈‍⬛",
-          "body": "其实你也可以所说我的",
+          "body": "其实你也可以听听我说的",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2108,7 +2108,7 @@
         {
           "id": "msg-zhao-mar3-29",
           "title": "🐈‍⬛",
-          "body": "你都说我们都朋友了",
+          "body": "你都说我们是朋友了",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2132,7 +2132,7 @@
         {
           "id": "msg-zhao-mar3-30",
           "title": "🐈‍⬛",
-          "body": "那可以知道你现在为什么不开心吗?",
+          "body": "那我可以知道你现在为什么不开心吗?",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
