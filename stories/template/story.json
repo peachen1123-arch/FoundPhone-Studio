@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 39,
+  "revision": 40,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -2156,7 +2156,7 @@
         {
           "id": "msg-zhao-mar3-31",
           "title": "🐈‍⬛",
-          "body": "你来接我吧",
+          "body": "你来找我吧",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2180,7 +2180,7 @@
         {
           "id": "msg-zhao-mar3-32",
           "title": "🐈‍⬛",
-          "body": "跟我说说话",
+          "body": "谢谢你听我说",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
