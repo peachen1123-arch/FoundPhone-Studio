@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 41,
+  "revision": 42,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -2036,7 +2036,7 @@
         {
           "id": "msg-zhao-mar3-26",
           "title": "🐈‍⬛",
-          "body": "没关系的我会合好",
+          "body": "没关系的我一会就好",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2108,7 +2108,7 @@
         {
           "id": "msg-zhao-mar3-29",
           "title": "🐈‍⬛",
-          "body": "你都说了我们朋友了",
+          "body": "你都说我们是朋友了",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2276,7 +2276,7 @@
         {
           "id": "msg-zhao-mar3-36",
           "title": "🐈‍⬛",
-          "body": "因为我总觉得你很可爱",
+          "body": "因为我总觉得你很可靠",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2300,7 +2300,7 @@
         {
           "id": "msg-zhao-mar3-37",
           "title": "🐈‍⬛",
-          "body": "还以为只有我会想这么多 在意这么多人的想法",
+          "body": "还以为只有我会想这么多，在意这么多人的想法",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2348,7 +2348,7 @@
         {
           "id": "msg-zhao-mar3-39",
           "title": "🐈‍⬛",
-          "body": "我说得好像我是什么无情的人",
+          "body": "说得好像我是什么无情的人",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2444,7 +2444,7 @@
         {
           "id": "msg-zhao-mar3-43",
           "title": "🐈‍⬛",
-          "body": "我说说本来是因为你是把自己的情绪控制地很好的人",
+          "body": "我是说本来是因为你是把自己的情绪控制地很好的人",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2540,7 +2540,7 @@
         {
           "id": "msg-zhao-mar3-47",
           "title": "🐈‍⬛",
-          "body": "我现在破了",
+          "body": "现在破灭了",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2732,7 +2732,7 @@
         {
           "id": "msg-zhao-mar3-55",
           "title": "🐈‍⬛",
-          "body": "我真的需要一个输入法",
+          "body": "我真的需要换一个输入法",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
@@ -2756,7 +2756,7 @@
         {
           "id": "msg-zhao-mar3-56",
           "title": "🐈‍⬛",
-          "body": "明天再搞吧",
+          "body": "明天再换吧",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
