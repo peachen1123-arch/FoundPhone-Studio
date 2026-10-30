@@ -3,7 +3,8 @@ import { dispatch, advance, choose, visible } from "../engine";
 import type { Story } from "./compiler";
 export function testStory(story: Story, work: Work) {
   const errors: string[] = [];
-  if (work.nodes.some((n) => n.type !== "comment") && !story.tests.length)
+  const hasEnding = work.nodes.some((n) => n.type === "ending");
+  if (hasEnding && !story.tests.length)
     errors.push("tests: 至少提供一个通关路径");
   const reached = new Set<string>();
   for (const t of story.tests) {
