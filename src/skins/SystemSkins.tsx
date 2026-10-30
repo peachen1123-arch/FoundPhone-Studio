@@ -358,33 +358,13 @@ export function SafariSkin(p: Props) {
 }
 export function NotesSkin(p: Props) {
   const { q, setQ, items } = useContent(p, "备忘录");
-  const [folder, setFolder] = useState<string | null>(null);
-  const list = folder
-    ? items.filter((i) => (i.folder || "备忘录") === folder)
-    : items;
+  const list = items;
   return (
     <div className="catalog-skin native-notes">
       <Header p={p} />
       <div className="catalog-scroll">
-        <button className="notes-back" onClick={() => setFolder(null)}>
-          <Folder size={17} />
-          文件夹
-        </button>
-        <h1>{folder || "所有备忘录"}</h1>
+        <h1>备忘录</h1>
         <SearchBox value={q} set={setQ} />
-        {!folder && (
-          <div className="note-folders">
-            {groupItems(items, "备忘录").map((g) => (
-              <button key={g} onClick={() => setFolder(g)}>
-                <Folder size={17} />
-                {g}
-                <small>
-                  {items.filter((i) => (i.folder || "备忘录") === g).length}
-                </small>
-              </button>
-            ))}
-          </div>
-        )}
         <div className="notes-list">
           {list.map((i) => (
             <button key={i.id} onClick={() => p.onItem(i)}>
@@ -395,7 +375,6 @@ export function NotesSkin(p: Props) {
                 <time>{i.time.slice(5, 10)}</time>{" "}
                 {i.password ? "已锁定的备忘录" : i.body.split("\n")[0]}
               </p>
-              <small>{i.folder}</small>
             </button>
           ))}
         </div>
