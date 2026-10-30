@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 44,
+  "revision": 46,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -3011,13 +3011,6 @@
         "id": "note-november-plan",
         "title": "11月安排",
         "body": "11月1日：確認快遞到齊，禮物包裝好放在櫃子裡，記得銷毀快遞單！！\n\n11月2日：約趙光旭明天晚上出門，買好電影票，帶上唇膏和外套。紙巾！還有護手霜！\n\n11月3日：和薛蘇仁配合支開隊友，然後告訴趙光旭讓他借給我一天，最後回宿舍的時候送上禮物。",
-        "kind": "note",
-        "folder": "私人"
-      },
-      {
-        "id": "note-easter-egg",
-        "title": "給撿到手機的你",
-        "body": "既然你翻到了這條：禮物在櫃子最下層，別告訴趙光旭我提前告訴你了 :)",
         "kind": "note",
         "folder": "私人"
       },
@@ -12281,17 +12274,17 @@
       ]
     },
     {
-      "id": "read-easter-egg",
-      "label": "发现彩蛋",
+      "id": "read-gift-plan",
+      "label": "发现礼物计划",
       "type": "event",
       "event": "read",
-      "target": "note-easter-egg",
+      "target": "note-november-plan",
       "next": [
-        "ending-easter-egg"
+        "ending-gift-plan"
       ]
     },
     {
-      "id": "ending-easter-egg",
+      "id": "ending-gift-plan",
       "label": "彩蛋结局",
       "type": "ending",
       "actions": [
@@ -12305,11 +12298,11 @@
   ],
   "tests": [
     {
-      "name": "easter-egg",
+      "name": "gift-plan",
       "steps": [
         {
           "event": "read",
-          "target": "note-easter-egg"
+          "target": "note-november-plan"
         }
       ],
       "ending": "🎉 彩蛋：你比趙光旭更早知道了禮物的位置"
