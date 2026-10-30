@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 48,
+  "revision": 49,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -3025,7 +3025,7 @@
       },
       {
         "id": "note-to-zhao",
-        "title": "To：赵光旭",
+        "title": "To：l̅y̅n̅n̅l̅y̅n̅n̅赵光旭",
         "kind": "note",
         "time": "2026-11-02 21:00",
         "folder": "",
