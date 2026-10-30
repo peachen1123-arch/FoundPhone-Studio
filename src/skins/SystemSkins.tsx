@@ -409,9 +409,9 @@ export function NotesSkin(p: Props) {
   );
 }
 export function CalendarSkin(p: Props) {
-  const [month, setMonth] = useState(8),
+  const [month, setMonth] = useState(10),
     [year, setYear] = useState(2026),
-    [day, setDay] = useState(1);
+    [day, setDay] = useState(3);
   const prefix = `${year}-${String(month + 1).padStart(2, "0")}`;
   const list = p.items.filter((i) =>
     i.time.startsWith(`${prefix}-${String(day).padStart(2, "0")}`),
