@@ -5,7 +5,7 @@
   "description": "僅用於介面測試，不含劇情",
   "category": "互动手机故事",
   "cover": "",
-  "updatedAt": 46,
+  "updatedAt": 47,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -15500,42 +15500,6 @@
           "type": "notification",
           "key": "",
           "value": "提醒事项：到餐廳和服務員商量好送蛋糕的時間。"
-        }
-      ],
-      "next": [],
-      "once": true,
-      "x": 0,
-      "y": 0
-    },
-    {
-      "id": "read-gift-plan",
-      "label": "发现礼物计划",
-      "type": "event",
-      "event": "read",
-      "target": "note-november-plan",
-      "conditions": [],
-      "logic": "and",
-      "actions": [],
-      "next": [
-        "ending-gift-plan"
-      ],
-      "once": true,
-      "x": 0,
-      "y": 0
-    },
-    {
-      "id": "ending-gift-plan",
-      "label": "彩蛋结局",
-      "type": "ending",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "",
-          "value": "🎉 彩蛋：你比趙光旭更早知道了禮物的位置"
         }
       ],
       "next": [],
