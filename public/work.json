@@ -5,7 +5,7 @@
   "description": "僅用於介面測試，不含劇情",
   "category": "互动手机故事",
   "cover": "",
-  "updatedAt": 44,
+  "updatedAt": 46,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -558,27 +558,6 @@
         "id": "note-november-plan",
         "title": "11月安排",
         "body": "11月1日：確認快遞到齊，禮物包裝好放在櫃子裡，記得銷毀快遞單！！\n\n11月2日：約趙光旭明天晚上出門，買好電影票，帶上唇膏和外套。紙巾！還有護手霜！\n\n11月3日：和薛蘇仁配合支開隊友，然後告訴趙光旭讓他借給我一天，最後回宿舍的時候送上禮物。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "qctumnnn",
-        "avatar": "",
-        "kind": "note",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "私人",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "note-easter-egg",
-        "title": "給撿到手機的你",
-        "body": "既然你翻到了這條：禮物在櫃子最下層，別告訴趙光旭我提前告訴你了 :)",
         "richText": "",
         "meta": {},
         "time": "2026-11-03 13:05",
@@ -15529,23 +15508,23 @@
       "y": 0
     },
     {
-      "id": "read-easter-egg",
-      "label": "发现彩蛋",
+      "id": "read-gift-plan",
+      "label": "发现礼物计划",
       "type": "event",
       "event": "read",
-      "target": "note-easter-egg",
+      "target": "note-november-plan",
       "conditions": [],
       "logic": "and",
       "actions": [],
       "next": [
-        "ending-easter-egg"
+        "ending-gift-plan"
       ],
       "once": true,
       "x": 0,
       "y": 0
     },
     {
-      "id": "ending-easter-egg",
+      "id": "ending-gift-plan",
       "label": "彩蛋结局",
       "type": "ending",
       "event": "",
