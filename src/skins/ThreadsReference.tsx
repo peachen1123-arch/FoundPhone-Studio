@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 import type { SkinProps } from "../AppSkins";
 import { Avatar, Media } from "./shared";
-import { makeItem, safeMedia, type Item } from "../schema";
+import { makeItem, type Item } from "../schema";
 import { useSkinState } from "../skinState";
 import "./threads-reference.css";
 
