@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 66,
+  "revision": 67,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -18543,6 +18543,230 @@
         "time": "2026-10-29 20:02",
         "folder": "",
         "likes": 3105,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-shy_dance",
+        "title": "shy 嗰段新舞真係唔敢恭維，八拍入面錯咗三拍，",
+        "body": "shy 嗰段新舞真係唔敢恭維，八拍入面錯咗三拍，粉絲話叫「個人風格」。個人風格唔係擋箭牌啊。",
+        "kind": "text",
+        "sender": "shy舞蹈批改组",
+        "time": "2026-10-31 21:40",
+        "folder": "",
+        "likes": 321,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-shy_vocal",
+        "title": "話說 shy 唱功，高音全靠喊。喊得幾大聲都唔係",
+        "body": "話說 shy 唱功，高音全靠喊。喊得幾大聲都唔係唱。練聲唔會遲，遲嘅係一直唔練。",
+        "kind": "text",
+        "sender": "shy唱功打分处",
+        "time": "2026-10-30 19:55",
+        "folder": "",
+        "likes": 486,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-ggg_atti2",
+        "title": "ggg 今日活動全程黑面，落台嗰刻即刻笑返。對粉",
+        "body": "ggg 今日活動全程黑面，落台嗰刻即刻笑返。對粉絲唔使演，但唔好攞正牌擺款。",
+        "kind": "text",
+        "sender": "ggg態度觀察室",
+        "time": "2026-10-31 18:12",
+        "folder": "",
+        "likes": 522,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-zygx_bubble2",
+        "title": "zygx 泡泡講咗半個鐘自己隻貓，一句冇提新專輯",
+        "body": "zygx 泡泡講咗半個鐘自己隻貓，一句冇提新專輯。哥，我哋係粉絲唔係貓友。",
+        "kind": "text",
+        "sender": "zygx泡泡速報",
+        "time": "2026-10-30 23:48",
+        "folder": "",
+        "likes": 435,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-fzy_sale2",
+        "title": "fzy 簽售講嚟講去嗰三句：「食飯未」「瞓覺未」",
+        "body": "fzy 簽售講嚟講去嗰三句：「食飯未」「瞓覺未」「多謝你」。每次都當初次見面咁問，唔好咁敷衍啦。",
+        "kind": "text",
+        "sender": "fzy簽售提詞器",
+        "time": "2026-10-31 15:26",
+        "folder": "",
+        "likes": 617,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-yun_atti",
+        "title": "云南人上次直播話「冇嘢好講」就真係冇嘢好講咁坐咗",
+        "body": "云南人上次直播話「冇嘢好講」就真係冇嘢好講咁坐咗成個鐘。這叫真實？這叫懶。",
+        "kind": "text",
+        "sender": "云南人态度科",
+        "time": "2026-10-30 21:03",
+        "folder": "",
+        "likes": 389,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-lao_one_tone",
+        "title": "老一 studio 版同現場版係兩隻生物。修音師",
+        "body": "老一 studio 版同現場版係兩隻生物。修音師父嗰份工先至最辛苦。",
+        "kind": "text",
+        "sender": "老一修音聽證會",
+        "time": "2026-10-31 13:44",
+        "folder": "",
+        "likes": 458,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-haozi_qs",
+        "title": "耗子今日簽售有 fan 話自己考試肥佬，佢直接笑",
+        "body": "耗子今日簽售有 fan 話自己考試肥佬，佢直接笑出聲。哥，情商唔該充值一下。",
+        "kind": "text",
+        "sender": "耗子情商現場",
+        "time": "2026-10-30 16:29",
+        "folder": "",
+        "likes": 531,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-xsr_act",
+        "title": "xsr 又接咗部古裝，表情永遠得三款：皺眉、瞪眼",
+        "body": "xsr 又接咗部古裝，表情永遠得三款：皺眉、瞪眼、張口。導演唔要面咩？",
+        "kind": "text",
+        "sender": "xsr演技討論區",
+        "time": "2026-10-31 10:07",
+        "folder": "",
+        "likes": 713,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-ggg_flop",
+        "title": "ggg 粉絲成日話佢「低調」，低調同過氣係兩回事",
+        "body": "ggg 粉絲成日話佢「低調」，低調同過氣係兩回事啊。演唱會仲有大把飛。",
+        "kind": "text",
+        "sender": "ggg排位現實",
+        "time": "2026-10-30 14:22",
+        "folder": "",
+        "likes": 347,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-shy_qs",
+        "title": "shy 三個禮拜冇更新，一更新就係廣告。粉絲唔係",
+        "body": "shy 三個禮拜冇更新，一更新就係廣告。粉絲唔係提款機，啲誠意呢？",
+        "kind": "text",
+        "sender": "shy營業指數",
+        "time": "2026-10-29 22:41",
+        "folder": "",
+        "likes": 502,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-fzy_gq",
+        "title": "出道八年，fzy 個訪談答案同八年前一模一樣。背",
+        "body": "出道八年，fzy 個訪談答案同八年前一模一樣。背定係背熟咗，但都背句新嘅啦。",
+        "kind": "text",
+        "sender": "fzy工齡計算器",
+        "time": "2026-10-31 08:15",
+        "folder": "",
+        "likes": 426,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-laogang_zs",
+        "title": "老港嗰把聲係遺傳，唔係努力。成日拿嚟做賣點，你都",
+        "body": "老港嗰把聲係遺傳，唔係努力。成日拿嚟做賣點，你都換啲新花先得啊。",
+        "kind": "text",
+        "sender": "老港裝修進度",
+        "time": "2026-10-30 11:31",
+        "folder": "",
+        "likes": 365,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-yunnan_bubble",
+        "title": "滇個泡泡十條有九條係「剛剛落地」「早唞」。呢啲訊",
+        "body": "滇個泡泡十條有九條係「剛剛落地」「早唞」。呢啲訊息都有人截圖收藏，服咗。",
+        "kind": "text",
+        "sender": "滇泡泡合集",
+        "time": "2026-10-29 20:18",
+        "folder": "",
+        "likes": 318,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-xsr_fan",
+        "title": "xsr 又出咗新歌，粉絲日日控評做數據，佢自己消",
+        "body": "xsr 又出咗新歌，粉絲日日控評做數據，佢自己消失咗幾日。哥你返嚟做工得唔得？",
+        "kind": "text",
+        "sender": "xsr粉絲勞動節",
+        "time": "2026-10-31 00:56",
+        "folder": "",
+        "likes": 594,
+        "comments": [],
+        "meta": {
+          "feed": "true"
+        }
+      },
+      {
+        "id": "tr-feed-aggasi_qs",
+        "title": "阿加西講最鍾意粉絲，演唱會加價嗰陣就唔見佢出聲。",
+        "body": "阿加西講最鍾意粉絲，演唱會加價嗰陣就唔見佢出聲。錢同愛心點解要二選一啊。",
+        "kind": "text",
+        "sender": "阿加西双标现场",
+        "time": "2026-10-30 17:34",
+        "folder": "",
+        "likes": 483,
         "comments": [],
         "meta": {
           "feed": "true"
