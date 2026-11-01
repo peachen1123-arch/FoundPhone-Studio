@@ -5,7 +5,7 @@
   "description": "僅用於介面測試，不含劇情",
   "category": "互动手机故事",
   "cover": "",
-  "updatedAt": 77,
+  "updatedAt": 78,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -118,15 +118,6 @@
       "icon": ""
     },
     {
-      "id": "mail",
-      "name": "邮件",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
       "id": "clock",
       "name": "时钟",
       "installed": true,
@@ -138,24 +129,6 @@
     {
       "id": "reminders",
       "name": "提醒事项",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "files",
-      "name": "文件",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "music",
-      "name": "音乐",
       "installed": true,
       "visible": true,
       "dock": false,
@@ -181,33 +154,6 @@
       "icon": ""
     },
     {
-      "id": "wallet",
-      "name": "钱包",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "health",
-      "name": "健康",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "find",
-      "name": "查找",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
       "id": "calculator",
       "name": "计算器",
       "installed": true,
@@ -226,15 +172,6 @@
       "icon": ""
     },
     {
-      "id": "qq",
-      "name": "QQ",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
       "id": "weibo",
       "name": "微博",
       "installed": true,
@@ -246,24 +183,6 @@
     {
       "id": "redbook",
       "name": "小红书",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "bilibili",
-      "name": "哔哩哔哩",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "alipay",
-      "name": "支付宝",
       "installed": true,
       "visible": true,
       "dock": false,
@@ -298,33 +217,6 @@
       "icon": ""
     },
     {
-      "id": "forum",
-      "name": "论坛",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "whatsapp",
-      "name": "WhatsApp",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "instagram",
-      "name": "Instagram",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
       "id": "tiktok",
       "name": "TikTok",
       "installed": true,
@@ -334,98 +226,8 @@
       "icon": ""
     },
     {
-      "id": "twitter",
-      "name": "X",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "telegram",
-      "name": "Telegram",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "discord",
-      "name": "Discord",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "youtube",
-      "name": "YouTube",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "line",
-      "name": "LINE",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "snapchat",
-      "name": "Snapchat",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "facebook",
-      "name": "Facebook",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "messenger",
-      "name": "Messenger",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
       "id": "reddit",
       "name": "Reddit",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "spotify",
-      "name": "Spotify",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "netflix",
-      "name": "Netflix",
       "installed": true,
       "visible": true,
       "dock": false,
@@ -451,10 +253,208 @@
       "icon": ""
     },
     {
+      "id": "mail",
+      "name": "邮件",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "files",
+      "name": "文件",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "music",
+      "name": "音乐",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "wallet",
+      "name": "钱包",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "health",
+      "name": "健康",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "find",
+      "name": "查找",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "qq",
+      "name": "QQ",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "bilibili",
+      "name": "哔哩哔哩",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "alipay",
+      "name": "支付宝",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "forum",
+      "name": "论坛",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "twitter",
+      "name": "X",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "line",
+      "name": "LINE",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "snapchat",
+      "name": "Snapchat",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "messenger",
+      "name": "Messenger",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
       "id": "kakao",
       "name": "KakaoTalk",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -937,29 +937,6 @@
         "comments": []
       }
     ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
     "clock": [
       {
         "id": "test-item-clock",
@@ -1111,52 +1088,6 @@
         "comments": []
       }
     ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "music": [
-      {
-        "id": "test-item-music",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
     "maps": [
       {
         "id": "place-xinghui",
@@ -1225,75 +1156,6 @@
         },
         "time": "2026-11-03 13:05",
         "sender": "qctumnnn",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
         "avatar": "",
         "kind": "text",
         "media": "",
@@ -2961,52 +2823,6 @@
         ]
       }
     ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
     "taobao": [
       {
         "id": "tb-order-ring",
@@ -3198,52 +3014,6 @@
     "delivery": [
       {
         "id": "test-item-delivery",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "instagram": [
-      {
-        "id": "test-item-instagram",
         "title": "測試內容",
         "body": "這是一條測試內容。",
         "richText": "",
@@ -10540,147 +10310,9 @@
         ]
       }
     ],
-    "twitter": [
-      {
-        "id": "test-item-twitter",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
     "reddit": [
       {
         "id": "test-item-reddit",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-11-03 13:05",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
         "title": "測試內容",
         "body": "這是一條測試內容。",
         "richText": "",
