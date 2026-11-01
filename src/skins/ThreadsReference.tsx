@@ -355,7 +355,10 @@ export function ThreadsReference(p: SkinProps) {
             {tab === "个人主页" && (
               <>
                 <div className="tr-profile">
-                  <Avatar name={me} src={safeMedia(p.ownerAvatar || "")} />
+                  <Avatar
+                    name={me}
+                    src={mine.find((i) => i.avatar)?.avatar || p.ownerAvatar}
+                  />
                   <p>{me}</p>
                 </div>
                 {(() => {
@@ -478,7 +481,10 @@ export function ThreadsReference(p: SkinProps) {
             </button>
           </header>
           <div className="tr-compose-content">
-            <Avatar name={me} src={safeMedia(p.ownerAvatar || "")} />
+            <Avatar
+              name={me}
+              src={mine.find((i) => i.avatar)?.avatar || p.ownerAvatar}
+            />
             <div>
               <b>{me}</b>
               <span className="tr-muted"> › 社群或话题</span>
