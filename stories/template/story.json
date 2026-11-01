@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 76,
+  "revision": 77,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -8864,6 +8864,56 @@
         "kind": "image",
         "media": "media/d9ab344899dd.jpg",
         "folder": "日常",
+        "meta": {}
+      },
+      {
+        "id": "photo-dance",
+        "title": "跳舞的影子",
+        "body": "",
+        "time": "2026-10-09 18:40",
+        "kind": "image",
+        "media": "media/02e99cf31a44.jpg",
+        "folder": "日常",
+        "meta": {}
+      },
+      {
+        "id": "photo-cake2",
+        "title": "麻薯蛋糕",
+        "body": "",
+        "time": "2026-10-24 15:22",
+        "kind": "image",
+        "media": "media/5506c6f7ea89.jpg",
+        "folder": "美食",
+        "meta": {}
+      },
+      {
+        "id": "photo-lookup",
+        "title": "仰拍",
+        "body": "",
+        "time": "2026-10-28 22:03",
+        "kind": "image",
+        "media": "media/b4265054f914.jpg",
+        "folder": "自拍",
+        "meta": {}
+      },
+      {
+        "id": "photo-shadow",
+        "title": "晚上的影子和花",
+        "body": "",
+        "time": "2026-10-13 20:36",
+        "kind": "image",
+        "media": "media/1162a2fee5e1.jpg",
+        "folder": "街拍",
+        "meta": {}
+      },
+      {
+        "id": "photo-cat",
+        "title": "오늘의 행운당 0원",
+        "body": "",
+        "time": "2026-10-20 21:57",
+        "kind": "image",
+        "media": "media/4885668ff6d3.jpg",
+        "folder": "表情包",
         "meta": {}
       }
     ],
