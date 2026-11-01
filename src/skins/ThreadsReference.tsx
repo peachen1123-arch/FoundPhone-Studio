@@ -58,15 +58,32 @@ export function ThreadsReference(p: SkinProps) {
       id: "local-thread-" + n,
       title: "本地串文",
       body,
-      sender: p.owner || "机主",
+      sender:
+        p.items.find((i) => i.meta.profile === "true")?.sender ||
+        p.owner ||
+        "机主",
       time: p.virtualTime || "09:41",
       meta: { local: "true" },
     }),
   );
+  // 机主在 Threads 里的账号名：优先取标记为 profile 的帖子作者
+  const me =
+    p.items.find((i) => i.meta.profile === "true")?.sender || p.owner || "机主";
+  // 首页只放别人的帖子（信息流），自己的串文只出现在个人主页
   const feed = [
       ...local,
-      ...p.items.filter((i) => i.folder !== "私信" && !i.meta.activityType),
+      ...p.items.filter(
+        (i) =>
+          i.folder !== "私信" &&
+          !i.meta.activityType &&
+          i.meta.profile !== "true",
+      ),
     ],
+    // 个人主页：自己发的全部串文（时间倒序）
+    mine = p.items
+      .filter((i) => i.folder !== "私信" && !i.meta.activityType)
+      .filter((i) => i.meta.profile === "true" || i.sender === me)
+      .sort((a, b) => b.time.localeCompare(a.time)),
     messages = p.items.filter((i) => i.folder === "私信"),
     activities = p.items.filter((i) => i.meta.activityType);
   const toggle = (id: string, items: string[], set: (v: string[]) => void) =>
@@ -228,7 +245,7 @@ export function ThreadsReference(p: SkinProps) {
                       : tab === "动态"
                         ? "动态"
                         : tab === "个人主页"
-                          ? p.owner || "机主"
+                          ? me
                           : tab}
                   </h1>
                   {(tab === "消息" || tab === "动态") && <BellOff />}
@@ -338,14 +355,20 @@ export function ThreadsReference(p: SkinProps) {
             {tab === "个人主页" && (
               <>
                 <div className="tr-profile">
-                  <Avatar name={p.owner || "机主"} src={safeMedia(p.ownerAvatar || "")} />
-                  <p>{p.owner}</p>
+                  <Avatar name={me} src={safeMedia(p.ownerAvatar || "")} />
+                  <p>{me}</p>
                 </div>
-                {feed
-                  .filter(
-                    (i) => i.sender === p.owner || i.meta.local === "true",
-                  )
-                  .map(card)}
+                {(() => {
+                  const all = [
+                    ...mine,
+                    ...local.filter((i) => i.meta.local === "true"),
+                  ].sort((a, b) => b.time.localeCompare(a.time));
+                  return all.length ? (
+                    all.map(card)
+                  ) : (
+                    <p className="tr-empty">还没有发布任何串文</p>
+                  );
+                })()}
               </>
             )}
             {((tab === "消息" && !messages.length) ||
@@ -455,9 +478,9 @@ export function ThreadsReference(p: SkinProps) {
             </button>
           </header>
           <div className="tr-compose-content">
-            <Avatar name={p.owner || "机主"} src={safeMedia(p.ownerAvatar || "")} />
+            <Avatar name={me} src={safeMedia(p.ownerAvatar || "")} />
             <div>
-              <b>{p.owner}</b>
+              <b>{me}</b>
               <span className="tr-muted"> › 社群或话题</span>
               <textarea
                 aria-label="串文内容"
