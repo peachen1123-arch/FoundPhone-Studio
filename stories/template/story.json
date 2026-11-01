@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 53,
+  "revision": 54,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -6284,7 +6284,7 @@
         {
           "id": "msg-zhao-may-50",
           "title": "🐈‍⬛",
-          "body": "你能不能不要 妆造完不要不打一声招呼就走掉呀",
+          "body": "你能不能不要 妆造完不打一声招呼就走掉呀",
           "richText": "",
           "meta": {
             "conversationId": "chat-zhao",
