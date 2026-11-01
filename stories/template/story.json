@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 77,
+  "revision": 78,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -49,44 +49,21 @@
     "safari",
     "notes",
     "calendar",
-    "mail",
     "clock",
     "reminders",
-    "files",
-    "music",
     "maps",
     "weather",
-    "wallet",
-    "health",
-    "find",
     "calculator",
     "settings",
-    "qq",
     "weibo",
     "redbook",
-    "bilibili",
-    "alipay",
     "taobao",
     "netease",
     "delivery",
-    "forum",
-    "whatsapp",
-    "instagram",
     "tiktok",
-    "twitter",
-    "telegram",
-    "discord",
-    "youtube",
-    "line",
-    "snapchat",
-    "facebook",
-    "messenger",
     "reddit",
-    "spotify",
-    "netflix",
     "pinterest",
-    "threads",
-    "kakao"
+    "threads"
   ],
   "contacts": [
     {
@@ -8977,16 +8954,6 @@
         }
       }
     ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "clock": [
       {
         "id": "test-item-clock",
@@ -9058,26 +9025,6 @@
         "folder": "生日計劃"
       }
     ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "music": [
-      {
-        "id": "test-item-music",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "maps": [
       {
         "id": "place-xinghui",
@@ -9116,36 +9063,6 @@
           "hourly": "[{\"time\": \"02:00\", \"temperature\": \"16\", \"rain\": \"0%\", \"wind\": \"3 km/h\"}, {\"time\": \"03:00\", \"temperature\": \"15\", \"rain\": \"0%\", \"wind\": \"\"}, {\"time\": \"04:00\", \"temperature\": \"15\", \"rain\": \"0%\", \"wind\": \"\"}, {\"time\": \"05:00\", \"temperature\": \"15\", \"rain\": \"0%\", \"wind\": \"\"}, {\"time\": \"06:00\", \"temperature\": \"14\", \"rain\": \"0%\", \"wind\": \"\"}]",
           "daily": "[{\"label\": \"今天\", \"low\": \"14\", \"high\": \"27\"}, {\"label\": \"明天\", \"low\": \"14\", \"high\": \"26\"}, {\"label\": \"后天\", \"low\": \"15\", \"high\": \"26\"}]"
         }
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
       }
     ],
     "calculator": [
@@ -10658,26 +10575,6 @@
         "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCACgAKADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDW8A6/bR6nqGgas/l2GpwgoXPyhjkAg/Ws5be98Navd2gZi27BDH5Wzxj/AHSD+BxXBTtNNpgMUn+l2EjEHvtIz+IyG/OuptNfXxLodrck7rq3Oxnz8y+qH2zyD1x9KCjp/DesgJdweX5lrO2ye0lYnD+uex9D39zU32q+0mc3GlzS3dhHgSwMdtxAvUEdnUdj36HBrmTJbalMp3+RqIHDLwJcf+ze3+Rdt72SzMUl2zKUP7u5jJIPs6j8sg/XNCYWOnn8RW93htQOyeJfOhubfIbAzzjr2OcenSph4gsNbtUE88ckTHak8RPynuG7c/h16CuYvtIs/E0W+2lFlfk5+VgYyfYD168flXA3+m6roOof6YJbWUn5Zxyr8+vcZ/yKbEett4i1HQ4ls7xzPbKMW0wHQd1Y/Tv+eRWjpmo2mtybLVmS5YAPbyMMMB/dJPX09uOR08v0vxg0EBg1KzSVTwVzhZPdewIqY/Y55WvNFlZFYgeWx6H09jSY0d5q2kC5byZjJb3O47XGSCc9fx7g9/xzxstndab5kRY+SpywBJ2f7Q/2efw+ldLovi1DGtl4gjdlc4ScjPTs3v79frXSXGnQXMK7ZTKn/LNzywH90nuKkaPAfE1gsG24USNbsP3ihiQVPdfUZ/KjwnJJL4lghExkW4URiYcZbHAb6jj616Vq/g+aEO8I32rZLICf3Z9vaqngLwrCviCGadB5ZYSpggqxBAI4700wsdZ4etEsdNuPPtpTdruQKeVcY4IHrj+VdlpdrZv4StIcbnRPnCclXY55/OrOpzQ6ZbtdSkpb5Cysv8IPGa53UNQt7K2mttCu45JrhcwBXG7zRzimO5u3c62s5i5+UDmuo8HXIutBhPUozx/kxFef2kl1c2MM+ox+VeOgMqHja2OR1NdH8M7vcdXsmcF4LgOF9FdQR+oamTLYm+LXhyTxN4G1GxtR/pqKJ7bHGZE5A/EZH418bW+oTIpVndWHDAk5B9K+9ZSRya+R/j94R/4Rzxa2o2sRGm6oWlXb0SX+Nfx+8PqfStI6GZ55JcyM5PmPx7mrEdw4VD5jcj+8azA5CqSRjqPapYX3Ku7IHpVAa2mXjWV3cQ3P+shJt5gepHTP9ai0Cd/DviK7tJgGt7n5gOzDuR79D+BqvqcoNzDekHa6CKY+p/hY/wAqtoP7Vso4shdUsuY2PG8Dp9e36e9cxsdPcgPMfmLoTnjqR6j3FdDpd3c2+108u78xfmil5WUe3cN/nrXIaNOs8CK64MZ2sh6oe6n+ldBaXEduBHPu+zOflcD7jf56j8aBo3ok0/UXZrCQWdwPvQTjBz35H8/zBqO6vbhbf7HqKFojkB3+ZWPv7Y6MM/0rL1+/ht41fUCPMGFjuE+8cdM+v86j0nVJ2hKQXMU1ux3iJ/nUH2yAVz6rj8aEJoy7vS4vPlSAIP70UnQj09/ZhVNNNubSfzrF2DINrL1yPRh3Hv8ASuourSzvCq2jPavjIt5DkAntE/cf7J/A5rAtTcxXrW7llliJ55BH5j8cfj9XcSR0Ph9/tyGDVIMsVyeQN47Mp6Ej9a73wYv2CU6fdOZIJvmikPT6fl/L2rnPDs9srtBdxKIm5ZQOIyf4l9FPcdutbVxFLZyGOF9zA74znrjuPyqSkd4luoZxJ8zYwcjO4VWstJjtZC0CKq7iy4GME9f1p/hrUl1TToZkUiZRtcVt42k7ThW4x6VoiTPuovtVpNDKpKOpBVhxXCaL4SjtvEYvTgR2+fKiIzgkEZHpwa9JfBU7uffvVWVVTOFwT0NNoLmNqaiNOOBjNQ/DG6jPjTV4RjdLaxvn12sR/wCzCqXivUlt42Qt82MVxvw/8Rf2X4+FxLG0sbwSxsiEbiMBuAep+XpS6g1ofSTDIrkviF4Wg8WeGr3SrnarSruhkI/1cg+6359fYmuu6io5Fz1pp2Mj8/NV0+50bU7rTtQjMV1bSGKRD2I/pVa3YbsZ4J4r6O/aT8D/AGyxXxNp0P8ApFuBHeBR9+P+F/w6E+n0r5m81kkDHGFPpWojQsL2LULUtIFy/wAsinpuPb8eoq3ErW5t2jdg0Z/dy9SD6GuFt7l7WRmUbkcbXQn7wro9M1hXhkSRxt4wWOD6YPv71g0apnXrO7NJe20YE6pi6iUdv74H939RV+x1eCUrhjFuGCrjKt7g9D+lc9p97+8VslJl5VgetXru1jnJnhTyyw+eNen1X29u1SVc6CRfPVYXK7G42PyCP8PQjkUk2kS2aF7Tcj44jkOVb6NXKwTXKq8Ujq8RPyhhnj+lepfD8jWrCSB2xPb4BDc7lPTP8s0WHc4G3v8AXYLpor6GGWzc/cZOV+h7Gu2tb2G7hjF1bs5THlOMCVfbPRh7H0revfD7xs2IwU9McfhWWLLynwy4pgQi4QSb7ZmVkJIO3lT2yvp61o2GprdWy8MqwNl1U/NCc9V77f5VG2lwzqCzEMDwynBH0NW9G0vyb9J1kO8ZBPHzD39aVgPQvDGI4PMQqwkOd6dHHr7H1roPMyuD19q5/TdkSKE+Ue3ArT80BTznFWibFmR9o2g9PSql3OFTceAO9Qyz4BPasPXr4RWkh3YIFFwON8Z6krXz88KMc1wdjeQQ+ILC7uw5t4rmOSQIcNtDAnFLreo/aL2T5skmsychIg2fm6ipKPtTRhcLpVoL2Uy3PlqZHIAJJGe1XKx/DGsw6voun3Sho2uIEkCOMZyueD0NbFUYMq31rFdW8sE6K8UqlHVujKRgg/hXxH8ZvBT+CfFE1tDvbTp/31q7Hkof4T7g8fka+5SMivGf2n9A+3eCItVSLzG02UGXHUQvhWP4HYfzqosD4okHWogPmHtV2VPSodlIo0tP1hoodkmWI9e4/oRXQ6Jq4mfymlIH8Oeq/WuKKU5ZGSTeuQQc8Umhp2PUvIO4K6jnkMO9dH8OdQbSfF9lFLkR3b/Zmx6np+uK898NeIg8f2a+YMQR5bHjPsff3rS1LxLHayRXFrw0bqwyAeVORn0PFK1ij64GmJPGAwGScmsnW/DFu9s7sqq4HDKcGs2bx/aWmmxSKGe4ljVxEo9QD19Oa818S+NtcvW3NOltbFuViGWA9zTYI2rdZfMkRW3CNypI55FbOl71bkj3rM8IW8T2W6FmcSfOZPUnvVXxd4isfD0LtNcRu4/hjbc304pDPQLW4XHJwe9W/tPBGc89TXjegeLr3VlEv2KWGInALHJ/Ku606/knChiMgfSgTOlkkO1mNcf4h82/vbfT4Sw845cjso5JroZHxbsxJ6ZpngqzS4lvdTuFyHPkxE/3V+9+v8qe4jj9e8D6XaaFe30cc6zQxGRSZSRkeorhPhnY2njXSdS8+WSDU7R8CNMFCCOD617h8RV8rwTrJiIx9nb+VfLXwj8RDw947sppXK2l6Bbze2TwfwOKaSuJtn1D8J9TvJPDunwNJut9HkeO4iPzl3ZsRBD1GAWOPpXs1eUfD/S57XxFqVygSLTnvxNIM4BfydqkD1yf88Uvijxr4ptLq5+yaFdNpqNiO5slSd2X1KEhh+ANO2uhJ6nNLHDGZJnSNB1ZzgD8a4Xxh408NS6be6XM7aglzC8MiW43LhgQfmPH5Zrym61mDxO7ONYkubpf9bZ3JaOWP/tm2CPwFVvshiJR+COQfUU1ER83OvOO1RGMVbYcVARyaksrOmOlRkVZkFQsVPAPNAEHIORUkkpkQK4yR3pCOabg7qBHvlvrjTfD3RDn5ltxGffGRWTpUbXbkzE7W7Vl6akx8H6W45TaRj8a2tGVyFwD7mgZpTaPdfZ1ggv3jshz5S5zk/jiuHvNHay8UyvfvJJFw1vu+YBf8c5Feqw4EPLD8TVUXkUM2cjPSpLUrGLo+tW8SpaRKdxbJyOleg6LNGgDyHr3rA1Cy0zVlS4YiK8UYE0eM/8AAh3qp9gv4UjCanaGNs923LjHUfjQDdztNT1A300Wn2B/fTsEB9PU/gOa76wto7SxhtYl2xRIEX+p/GvPvBsWn6WzzSTGe7fhpmGNo9AOwrsxqkJiykoZR71SIZkfEzbF4H1olgf3DV8oaB4YbW/A2o39oCb2xkDADutfT/xFvIrnwPqwDDmI8d68i/Zvkhax1iCcZR/lI9RxTA9b+AfiK48UeHre4SU+akYt7qPd1deM49wQfwr2b7EqpgKK+VvBaT/D/wCJ01jFKyaRrBzDIh4jl5x+fStXV9S8RL41vLrTPEmqWk896tt5avviwsY3N5Z44xVa9CWe+eIPCml61aOmq2NvdADKl0BZD6q3UH3FeW3GlPaXU2lzO8jwgvayyHLSJ3Vj3YevcY96gXUfiHZ5uLXxOl6ycmC8skEcg9MryPqKD4li8XBY7qF9H8TWbh5LYndgZwJYz/Ghzg/XBpq/UR8tuBmoXwORUjnJppRmVm/hXrWZZXbrWbGrNcnqcGtR+I2c9h1rMjkKSbs9etAFhlwKaOtFyT+7dT8uaegBwRQB9N/C3wna6v8ADLSp5VYuwc5/4ERVi58HTWTN9m+6PQV2/wCzzbrN8IdEOM/6wH/vtq7e9023RS0pRB3JOKLXC58/y+H9Rkzgt+VZ8vhrUST8jsfpX0HHp9jIkLxTRMkx/dlSDv8ApUkWk27yNHG8bOn3lUjI+oo5QufM82japbMTtkwOvBqrI13CfmDg+tfT9z4fjdWBjDfhXK6z4TgkJ/cAHPpSsK54jaaxcQnErMR7Vp2/iGVFKo7Adga6e/8AB+1yVj71TPhJwfuUrlHN6xqVxdaVdpKx2tGeK4H4QapLp0uoJFwWINevXnhmSOwuDs/5Zsf0rx34XWbXHijUbUDkZ4H1NUmI9G1K+g1G12zEiVSHjcHBRhyCK1vhnYz65qC6nd3ZS4hmlaYun7p3bAA4+7kDOfesq68OyqxwCD3q1o0ut6AlwmmXTwxXA/eJtDBvfBHWmmJnsungXttcAweUIpDF1yGx1IPcVzHirw1JcNDfaa6waraN5lvKwyPdG9UYcEfj1FeM6jqfj/wzbPJpGrzyWAJPllFfZ36EdKxrX46+MrR9l79hu07+ZBtJ/EVfMhWOOCguA+QvfHWkkYupyeBwBTvMcq6g8EfNTCRjCgkYwSazKKt+222AH8RrMUZBq9qXDovBAUH86q/SgB8TqIyj9Klh2hVzxVQ966rwTrMOhXb3dxYJe5gZEjkxs3EYywI5H09BQB9d/s1ToPg9pzOwCRSzAknAHzmu6tbJdYglu5rif7Pc4aBYm8siPA53DnnGevQ15Z+zdNHJ8JDBMEMX2uVGVsY2kgkfrXqXhS+NxphgHzPYyNZu6j5XKYGVPQgjH0OR2pkmg2lWhjKeQoQqVwpK8HqOKItMtYGV7eFUkQMEbJO3PXvVrzCOopyyinYDGtzqdpG76iVnUZd2jxhQB/CAAffBz9angktr+MGAhgV3D/aHqD3H0rV3KaoXunKzGazIhnHIA4Vj2yP6/nmkBQuNJicn5feqM2iL1UfpWzpt60irDfmOO96FAu3Ppxk+/QkcVoNGOeKNB3OGvtDZoJVIyCpH6V8x/CC1MXxm1W0IIKmTjHoa+0JIQwPHavk/4dwi3/ad1m2wOXm4/wC+TRYLns9zpKOf9WM49KzZ9Hj3crXpstgjA/LVGfRlfgCiwXPPTpUBjYFAQRggjivJPiP8KVuxLfaKmyU8vD2P0r6Ok0XYxx/KqN1pUyg4Xp7UBc+HfWjk4AoFQ72DqFwCaQyjdsWnPoBiogcDpipJE2yPuOTmozigAqzZTHzBGx+U8fSqZNKhwQR1zQB9lfstWRk8A3B3ZUXz4A6dFr3G0tIbaPZDGka5LEKMcnkn6mvE/wBkO5Wf4d36A/NHqDgj6opr3ShsliFQeopvlr6U+ikIj8oetJ5WepqWincLmZqulR6hb7JDhx918ZI5z+XA/nwai029Kymxu5S12mTyuMr256E4/wA8GtisvW9Oe7VJ7RhHfQ8xuRkfTB4+h7fiaAL/ANa+T9HxaftcXYBwskr/AI5jB/pX1Lo+pR6jFIArpNC2yVHQqQfUe1fNWsWv2b9sCzAwBNsf84j/AIU0xn0/gHtQyA/WnhBS7aVwuQGEH61E0C88dauYoxRcLn5vCPDfMCKRYwcn34zUkzYb5T06+9U5pGOQmAd3U0yjPnOZXx3JqBsZpx3MTjnnsKQxt6UgI8E9KfGMGr2n6fcXLERRl8fex2rrtM0PRLUGS9me4nPSFVyo/Giwj3/9jWVT4Q8QKSBtvlPPb92K9t1DxVoGmnbe6xYQsP4TOu78gc18weDbS0WMxWlu0EL4LRhsK/1xXQNpdkkpeO2jBPOAtVyks9rf4i+GRxHqBmPby4nOfxxWfc/E2wRiLewu5gP4jtQfqa8qijA+UAKPYdKhewZpGk86UsT0LcAfSjlQrnpzfFaEj5NKlJ/2pQP6VE3xSkJYR6XGCOzT9vyrzGa0mjQlDuxzWSqodQciV3uB1VnJwKfKhnrx+KV1/wBA+2H1kamr8U7s9NPtT/20avLmYjPm5yozgColm+ZBGM7+cE4wKOVDPVNM8dXF3rKyrZpbzMD+5SXKzH0ORwT6+1cBravdfGG08aSII5rIqjWYOQQoK/ex159KqLNgh1YhlIIYcc+ta2oztqcC6hvTzeI5o1HKtz83uD6/hRZAekJ8WtLUgXOnX8fuoR/61eh+KXhhxma5ubf/AK6W7/0BrxV1LFQQCT1PpTJYQQVwDS5UI+hLDxv4ZvyBba5Ylj0V5Qh/JsVvxSJKgeJ1dD0ZTkH8a+SrqzRm2+WGGOSeldZ8HbG4g125vomlFvZxHKhyEZ24AI6HjcaTiOx80SKokHmsdx52jtSPFGsReUgKPujux9qbp9v5izXchIgRtrMeSx9K3tPtLeaV50CyAn5WPJH09KaGcrNHNEufIMUR6ccfnU2m2ct/MUhUttG5j/dFdjZRKrvb/ZsQnJyTuVsnn8fatTS7W0hjAtoVgy2SU4Y+1FguZugwQ26C3CBXxkkdXqLU9KnjdZbLdLk5YZ5H0raltX2rJGyR3AbKMOQT78elSxspU7QwPRgeoPeiwXMzwlrsum6iHZmWPhWQjj3r2KwvIL+EPEcnAyPSvLbmKK5VhPCJm4OF+Vs+xqbwpqV3pNzINly1gp5DY3IPp3/CmhPU9TVBk9OtPRevHHtWJdeLtEt0Be73HHRFJNZEvxE06P5ba3uJj2zhaZNjsymCM1GLOFXaRYY1c/xAc1wkvxBuZD/o+mhR/ttUb+NdWIB8qxjHXBJP9aV0OzO+eBd+e+MZrC1KziW5SSXzGIPy7OPzrlj4y1U5zNYj225/rUieNL+OMZktHOeQUzj9aLgb7wGchTGVjHJJFXdMuhp08p2NJEyhHUAnfnvj261zn/Ca3LRlcWZB6nBB/nVSfxmyxspghWRgQCsnOfUZFFxnX+JdBMNpFNcqyFeRHuIJU8q+Ae+cexGKseA/+Q/YNqFu9xp3mBMsu4biPlB9RnFOm1bUdb0zS572LEUVuIosDhgO5PTJrsbTX0sfC0X2ayEqwfJdRKRvK9Q6nsQefr1pi6nXy6L4evozOml2mx+SRGBzmp7m0s9P0yW2s7eG2gQBtsa4BBzz/Kvn+Txje2niBLXQb37Vptwx3faomRoT1xnpn6Zz7V0F/wCMNZn05rMpArtwZQ7EEf7uOvFZts00P//Z"
       }
     ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "taobao": [
       {
         "id": "tb-order-ring",
@@ -10780,26 +10677,6 @@
     "delivery": [
       {
         "id": "test-item-delivery",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "instagram": [
-      {
-        "id": "test-item-instagram",
         "title": "測試內容",
         "body": "這是一條測試內容。",
         "sender": "测试用户",
@@ -18048,69 +17925,9 @@
         }
       }
     ],
-    "twitter": [
-      {
-        "id": "test-item-twitter",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "reddit": [
       {
         "id": "test-item-reddit",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
         "title": "測試內容",
         "body": "這是一條測試內容。",
         "sender": "测试用户",
