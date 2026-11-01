@@ -29,6 +29,14 @@ import { Avatar, Media } from "./shared";
 import { makeItem, safeMedia, type Item } from "../schema";
 import { useSkinState } from "../skinState";
 import "./threads-reference.css";
+
+/** 帖子上显示日期（YYYY-MM-DD）而不是 24h 时刻；无日期时退回 HH:mm */
+function stamp(time: string) {
+  const t = (time || "").trim();
+  const d = /^\d{4}-\d{1,2}-\d{1,2}/.exec(t);
+  if (d) return d[0];
+  return t.slice(-5);
+}
 export function ThreadsReference(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "threads-tab", "首页"),
     [liked, setLiked] = useSkinState<string[]>(p, "threads-liked", []),
@@ -80,7 +88,7 @@ export function ThreadsReference(p: SkinProps) {
       <div className="tr-post-content">
         <div className="tr-byline">
           <b>{i.sender}</b>
-          <span>{i.time.slice(-5)}</span>
+          <span>{stamp(i.time)}</span>
           <button
             aria-label="帖子选项"
             onClick={() => {
