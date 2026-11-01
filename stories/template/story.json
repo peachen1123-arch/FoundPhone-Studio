@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 74,
+  "revision": 75,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -8767,11 +8767,53 @@
     "contacts": [],
     "photos": [
       {
-        "id": "test-item-photos",
-        "title": "測試內容",
-        "body": "這是一條測試內容。",
-        "sender": "测试用户",
-        "kind": "text",
+        "id": "photo-baby",
+        "title": "翻到一张老照片",
+        "body": "",
+        "time": "2026-10-11 21:30",
+        "kind": "image",
+        "media": "media/d6d620b1a9af.jpg",
+        "folder": "家",
+        "meta": {}
+      },
+      {
+        "id": "photo-dongfeng",
+        "title": "东风路",
+        "body": "",
+        "time": "2026-10-18 20:12",
+        "kind": "image",
+        "media": "media/5d67fd43ccf9.jpg",
+        "folder": "街拍",
+        "meta": {}
+      },
+      {
+        "id": "photo-bridge",
+        "title": "海港大桥的晚上",
+        "body": "",
+        "time": "2026-09-28 19:47",
+        "kind": "image",
+        "media": "media/8b2f182c871b.jpg",
+        "folder": "旅行",
+        "meta": {}
+      },
+      {
+        "id": "photo-ribbon",
+        "title": "红丝带",
+        "body": "",
+        "time": "2026-10-26 23:05",
+        "kind": "image",
+        "media": "media/3f90799c36de.jpg",
+        "folder": "自拍",
+        "meta": {}
+      },
+      {
+        "id": "photo-sub",
+        "title": "赛百味",
+        "body": "",
+        "time": "2026-10-21 13:26",
+        "kind": "image",
+        "media": "media/13205dc6307e.jpg",
+        "folder": "美食",
         "meta": {}
       }
     ],
