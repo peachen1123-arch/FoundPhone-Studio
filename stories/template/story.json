@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 75,
+  "revision": 76,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -8814,6 +8814,56 @@
         "kind": "image",
         "media": "media/13205dc6307e.jpg",
         "folder": "美食",
+        "meta": {}
+      },
+      {
+        "id": "photo-eyemask",
+        "title": "蒸汽眼罩",
+        "body": "",
+        "time": "2026-10-27 23:40",
+        "kind": "image",
+        "media": "media/77e3d853f21e.jpg",
+        "folder": "日常",
+        "meta": {}
+      },
+      {
+        "id": "photo-mochi",
+        "title": "葡萄味的冰皮月亮蛋糕",
+        "body": "",
+        "time": "2026-10-25 21:08",
+        "kind": "image",
+        "media": "media/bb3f3dcc2aff.jpg",
+        "folder": "美食",
+        "meta": {}
+      },
+      {
+        "id": "photo-noodle",
+        "title": "干炒牛河",
+        "body": "",
+        "time": "2026-10-22 12:31",
+        "kind": "image",
+        "media": "media/a8a7924c8ad5.jpg",
+        "folder": "美食",
+        "meta": {}
+      },
+      {
+        "id": "photo-seal",
+        "title": "胖海豹",
+        "body": "",
+        "time": "2026-10-19 22:15",
+        "kind": "image",
+        "media": "media/e6cebd00fd44.jpg",
+        "folder": "表情包",
+        "meta": {}
+      },
+      {
+        "id": "photo-bag",
+        "title": "拆礼物",
+        "body": "",
+        "time": "2026-10-13 21:52",
+        "kind": "image",
+        "media": "media/d9ab344899dd.jpg",
+        "folder": "日常",
         "meta": {}
       }
     ],
