@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 79,
+  "revision": 80,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -8891,6 +8891,86 @@
         "kind": "image",
         "media": "media/4885668ff6d3.jpg",
         "folder": "表情包",
+        "meta": {}
+      },
+      {
+        "id": "photo-gege",
+        "title": "鸽鸽和海豹杯",
+        "body": "",
+        "time": "2026-10-30 22:14",
+        "kind": "image",
+        "media": "media/62f92a7bc4dc.jpg",
+        "folder": "日常",
+        "meta": {}
+      },
+      {
+        "id": "photo-sakura",
+        "title": "樱花树下面",
+        "body": "",
+        "time": "2026-10-15 21:03",
+        "kind": "image",
+        "media": "media/a9f46b9846e1.jpg",
+        "folder": "自拍",
+        "meta": {}
+      },
+      {
+        "id": "photo-hearts",
+        "title": "比心二人组",
+        "body": "",
+        "time": "2026-10-06 16:47",
+        "kind": "image",
+        "media": "media/d3bfd229ef76.jpg",
+        "folder": "日常",
+        "meta": {}
+      },
+      {
+        "id": "photo-pillow",
+        "title": "U型枕战损",
+        "body": "",
+        "time": "2026-10-08 23:18",
+        "kind": "image",
+        "media": "media/564372dbf692.jpg",
+        "folder": "表情包",
+        "meta": {}
+      },
+      {
+        "id": "photo-khaki",
+        "title": "卡其色外套",
+        "body": "",
+        "time": "2026-10-26 20:55",
+        "kind": "image",
+        "media": "media/623e18b341d5.jpg",
+        "folder": "自拍",
+        "meta": {}
+      },
+      {
+        "id": "photo-valley",
+        "title": "山谷里的风",
+        "body": "",
+        "time": "2026-10-02 15:26",
+        "kind": "image",
+        "media": "media/3ee810854b66.jpg",
+        "folder": "街拍",
+        "meta": {}
+      },
+      {
+        "id": "photo-sleep",
+        "title": "当场去世",
+        "body": "",
+        "time": "2026-10-23 22:40",
+        "kind": "image",
+        "media": "media/36294f02c1ad.jpg",
+        "folder": "表情包",
+        "meta": {}
+      },
+      {
+        "id": "photo-catpaw",
+        "title": "猫猫贴贴",
+        "body": "",
+        "time": "2026-10-31 23:31",
+        "kind": "image",
+        "media": "media/f724638df06a.jpg",
+        "folder": "日常",
         "meta": {}
       }
     ],
