@@ -196,7 +196,7 @@ export function validateWork(input: unknown): Work {
   return workSchema.parse(input);
 }
 export function safeMedia(value: string) {
-  return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
+  return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/i.test(
     value,
   ) ||
   /^videos\/[\w.-]+\.(mp4|jpg|jpeg|png|webp|gif)$/.test(value) ||
