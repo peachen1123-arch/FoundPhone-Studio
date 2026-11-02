@@ -2003,8 +2003,28 @@
   background: #fff;
   padding-bottom: 5px;
 }
+.weibo-post > .social-author {
+  justify-content: flex-start;
+  text-align: left;
+  padding: 12px 13px 4px;
+}
+.weibo-post > .social-author .catalog-avatar {
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+}
+.weibo-post > .social-author strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #eb7350;
+}
+.weibo-post > .social-author small {
+  font-size: 11px;
+  color: #999;
+  margin-top: 3px;
+}
 .weibo-post > .social-body {
-  padding: 1px 13px 9px;
+  padding: 4px 13px 9px;
 }
 .weibo-post .social-actions {
   border-top: 1px solid #f2f2f2;
