@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 93,
+ "revision": 94,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -20816,6 +20816,17 @@
      "11：我只是想要一只ganadi呀..."
     ],
     "avatar": "media/av-eleven.jpg"
+   },
+   {
+    "id": "wx-group-avatar",
+    "title": "在韩务工",
+    "body": "",
+    "time": "2025-12-27 21:03",
+    "sender": "在韩务工",
+    "kind": "text",
+    "folder": "群头像",
+    "hidden": false,
+    "avatar": "media/av-group.jpg"
    }
   ]
  },
