@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 89,
+ "revision": 90,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -727,6 +727,15 @@
      "time": "2026-07-09 12:32",
      "sender": "🐈‍⬛",
      "senderId": "zhao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-090a",
+     "title": "",
+     "body": "就是送过来全凉掉了",
+     "time": "2026-07-09 12:33",
+     "sender": "孫哥",
+     "senderId": "sun",
      "outgoing": false
     },
     {
@@ -20514,6 +20523,34 @@
      "type": "notification",
      "key": "",
      "value": "提醒事项：到餐廳和服務員商量好送蛋糕的時間。"
+    }
+   ]
+  },
+  {
+   "id": "evt-calendar-redbook",
+   "label": "打开日历→小红书弹窗",
+   "type": "event",
+   "event": "openApp",
+   "target": "calendar",
+   "actions": [
+    {
+     "type": "notification",
+     "value": "小红书：你关注的人更新了",
+     "key": ""
+    }
+   ]
+  },
+  {
+   "id": "evt-clock-threads",
+   "label": "打开时钟→Threads弹窗",
+   "type": "event",
+   "event": "openApp",
+   "target": "clock",
+   "actions": [
+    {
+     "type": "notification",
+     "value": "Threads：你的串文获超过100次浏览",
+     "key": ""
     }
    ]
   }
