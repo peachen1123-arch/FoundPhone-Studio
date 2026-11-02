@@ -4937,6 +4937,9 @@ label {
 .call-spacer {
   flex: 1;
 }
+.call-audio {
+  display: none;
+}
 .call-grid,
 .call-grid-ring {
   display: grid;
