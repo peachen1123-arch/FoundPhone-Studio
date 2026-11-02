@@ -5,7 +5,7 @@
   "description": "僅用於介面測試，不含劇情",
   "category": "互动手机故事",
   "cover": "",
-  "updatedAt": 98,
+  "updatedAt": 99,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -473,6 +473,28 @@
         "avatar": "",
         "kind": "text",
         "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "likers": [],
+        "comments": []
+      },
+      {
+        "id": "call-zhao-gulu",
+        "title": "🐈‍⬛ 的来电",
+        "body": "",
+        "richText": "",
+        "meta": {},
+        "time": "2026-11-03 13:05",
+        "sender": "qctumnnn",
+        "avatar": "",
+        "kind": "audio",
+        "media": "media/call-gulu.mp3",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -30783,6 +30805,46 @@
           "type": "notification",
           "key": "",
           "value": "Threads：你的串文获超过100次浏览"
+        }
+      ],
+      "next": [],
+      "once": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "evt-taobao-call",
+      "label": "打开淘宝→🐈‍⬛来电",
+      "type": "event",
+      "event": "openApp",
+      "target": "taobao",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "call",
+          "key": "call-zhao-gulu",
+          "value": "🐈‍⬛"
+        }
+      ],
+      "next": [],
+      "once": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "evt-redial",
+      "label": "拒接后再拨",
+      "type": "event",
+      "event": "callDeclined",
+      "target": "call-zhao-gulu",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "call",
+          "key": "call-zhao-gulu",
+          "value": "🐈‍⬛"
         }
       ],
       "next": [],
