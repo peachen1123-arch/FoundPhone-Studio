@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 98,
+ "revision": 99,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -10462,6 +10462,13 @@
     "sender": "测试用户",
     "kind": "text",
     "meta": {}
+   },
+   {
+    "id": "call-zhao-gulu",
+    "title": "🐈‍⬛ 的来电",
+    "body": "",
+    "kind": "audio",
+    "media": "media/call-gulu.mp3"
    }
   ],
   "contacts": [],
@@ -21072,6 +21079,34 @@
      "type": "notification",
      "value": "Threads：你的串文获超过100次浏览",
      "key": ""
+    }
+   ]
+  },
+  {
+   "id": "evt-taobao-call",
+   "label": "打开淘宝→🐈‍⬛来电",
+   "type": "event",
+   "event": "openApp",
+   "target": "taobao",
+   "actions": [
+    {
+     "type": "call",
+     "key": "call-zhao-gulu",
+     "value": "🐈‍⬛"
+    }
+   ]
+  },
+  {
+   "id": "evt-redial",
+   "label": "拒接后再拨",
+   "type": "event",
+   "event": "callDeclined",
+   "target": "call-zhao-gulu",
+   "actions": [
+    {
+     "type": "call",
+     "key": "call-zhao-gulu",
+     "value": "🐈‍⬛"
     }
    ]
   }
