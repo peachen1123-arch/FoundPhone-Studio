@@ -697,7 +697,10 @@ function PhoneRuntime({
               className="device-banner"
               onClick={() => {
                 setBanner("");
-                setPanel("notification");
+                const targetApp = notificationContent(banner, work.apps).appId;
+                if (targetApp && installedApps.some((a) => a.id === targetApp))
+                  open(targetApp);
+                else setPanel("notification");
               }}
             >
               <AppIcon
