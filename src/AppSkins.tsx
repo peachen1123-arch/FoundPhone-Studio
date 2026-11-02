@@ -213,7 +213,7 @@ export function WeChatSkin(p: SkinProps) {
   const conversations = [
     ...new Set(
       p.items
-        .filter((i) => i.folder !== "朋友圈" && i.kind !== "post")
+        .filter((i) => i.folder !== "朋友圈" && i.kind !== "post" && i.folder !== "群头像")
         .slice()
         .sort((a, b) => a.time.localeCompare(b.time))
         .reverse()
@@ -394,6 +394,12 @@ export function WeChatSkin(p: SkinProps) {
                 .map((t) => {
                   const list = p.items.filter((i) => i.title === t),
                     last = list.at(-1)!;
+                  const groupAvatar = list.find(
+                    (i) => i.folder === "群头像",
+                  )?.avatar;
+                  const otherAvatar = list
+                    .filter((i) => !i.outgoing)
+                    .at(-1)?.avatar;
                   return (
                     <button
                       className="wx-chat-row"
@@ -408,7 +414,12 @@ export function WeChatSkin(p: SkinProps) {
                       }}
                     >
                       <span className="wx-chat-avatar">
-                        <Avatar name={t} src={last.avatar} />
+                        <Avatar
+                          name={t}
+                          src={
+                            groupAvatar || otherAvatar || last.avatar
+                          }
+                        />
                         {!readThreads.includes(t) &&
                           !seenCount.includes(t) && (
                             <b className="wx-unread">1</b>
