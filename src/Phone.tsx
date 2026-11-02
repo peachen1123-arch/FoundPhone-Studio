@@ -681,7 +681,7 @@ function PhoneRuntime({
               }}
             />
           )}
-          {banner && !locked && (
+          {banner && !locked && !s.incomingCall && (
             <button
               className="device-banner"
               onClick={() => {
