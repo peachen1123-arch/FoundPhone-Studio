@@ -60,10 +60,11 @@ function Avatar({
   round?: boolean;
   src?: string;
 }) {
+  const media = safeMedia(src);
   return (
     <span className={`skin-avatar ${round ? "round" : ""}`}>
-      {safeMedia(src)?.startsWith("data:image/") ? (
-        <img src={safeMedia(src)} alt="" />
+      {media ? (
+        <img src={media} alt="" />
       ) : (
         name.slice(0, 1)
       )}
@@ -350,7 +351,7 @@ export function WeChatSkin(p: SkinProps) {
               className="wx-moment-post"
               onClick={() => p.onItem(i)}
             >
-              <Avatar name={i.sender} />
+              <Avatar name={i.sender} src={i.avatar} />
               <div>
                 <strong>{i.sender}</strong>
                 <p>{i.body}</p>
