@@ -5001,3 +5001,24 @@ label {
 .wechat-ui .skin-thread::-webkit-scrollbar {
   display: none;
 }
+
+.wx-moment-likes {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  color: #576b95;
+}
+.wx-moment-likes svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.wx-moment-likes p {
+  margin: 0 !important;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.wx-moment-likes-divider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 6px -10px;
+}
