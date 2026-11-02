@@ -52,6 +52,11 @@ import {
   ArrowUp,
   Folder,
   Phone as PhoneIcon,
+  Video,
+  MicOff,
+  Volume2,
+  Voicemail,
+  Grid,
 } from "lucide-react";
 import { getApp, type AppPlugin } from "./registry";
 import {
@@ -623,74 +628,58 @@ function PhoneRuntime({
             </div>
           )}
           {!creator && s.incomingCall && (
-            <div className="incoming-call-screen">
-              <small>
-                {s.incomingCall.status === "ringing" ? "来电" : "通话中"} ·
-                作品内模拟
-              </small>
-              <div className="incoming-avatar">
-                {s.incomingCall.caller.slice(0, 1)}
-              </div>
-              <h2>{s.incomingCall.caller}</h2>
-              {s.incomingCall.status === "answered" &&
-                (() => {
-                  const record = work.data.phone?.find(
-                    (i) => i.id === s.incomingCall?.target,
+            <CallScreen
+              caller={s.incomingCall.caller}
+              answered={s.incomingCall.status === "answered"}
+              avatar={
+                work.data.contacts?.find(
+                  (c) => c.sender === s.incomingCall?.caller,
+                )?.avatar ||
+                Object.values(work.data)
+                  .flat()
+                  .find(
+                    (c) =>
+                      c.sender === s.incomingCall?.caller && c.avatar,
+                  )?.avatar
+              }
+              audioSrc={(() => {
+                const record = work.data.phone?.find(
+                  (i) => i.id === s.incomingCall?.target,
+                );
+                return record?.kind === "audio"
+                  ? safeMedia(record.media)
+                  : null;
+              })()}
+              onAccept={() => {
+                const call = runtimeRef.current.incomingCall;
+                if (call)
+                  update(
+                    dispatch(
+                      work,
+                      {
+                        ...runtimeRef.current,
+                        incomingCall: { ...call, status: "answered" },
+                      },
+                      "callAnswered",
+                      call.target || call.caller,
+                    ),
                   );
-                  return record?.kind === "audio" && safeMedia(record.media) ? (
-                    <audio controls src={safeMedia(record.media)} />
-                  ) : (
-                    <p>这是一通虚构来电。</p>
+              }}
+              onEnd={() => {
+                const call = runtimeRef.current.incomingCall;
+                if (call)
+                  update(
+                    dispatch(
+                      work,
+                      { ...runtimeRef.current, incomingCall: null },
+                      call.status === "ringing"
+                        ? "callDeclined"
+                        : "callEnded",
+                      call.target || call.caller,
+                    ),
                   );
-                })()}
-              <div className="incoming-actions">
-                <button
-                  className="decline-call"
-                  onClick={() => {
-                    const call = runtimeRef.current.incomingCall;
-                    if (call)
-                      update(
-                        dispatch(
-                          work,
-                          { ...runtimeRef.current, incomingCall: null },
-                          call.status === "ringing"
-                            ? "callDeclined"
-                            : "callEnded",
-                          call.target || call.caller,
-                        ),
-                      );
-                  }}
-                >
-                  <PhoneIcon size={25} />
-                  <span>
-                    {s.incomingCall.status === "ringing" ? "拒接" : "挂断"}
-                  </span>
-                </button>
-                {s.incomingCall.status === "ringing" && (
-                  <button
-                    className="accept-call"
-                    onClick={() => {
-                      const call = runtimeRef.current.incomingCall;
-                      if (call)
-                        update(
-                          dispatch(
-                            work,
-                            {
-                              ...runtimeRef.current,
-                              incomingCall: { ...call, status: "answered" },
-                            },
-                            "callAnswered",
-                            call.target || call.caller,
-                          ),
-                        );
-                    }}
-                  >
-                    <PhoneIcon size={25} />
-                    <span>接听</span>
-                  </button>
-                )}
-              </div>
-            </div>
+              }}
+            />
           )}
           {banner && !locked && (
             <button
@@ -1326,4 +1315,82 @@ function AppContent({
 }
 function UsersIcon() {
   return <PhoneIcon size={17} />;
+}
+
+function CallTimer() {
+  const [sec, setSec] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setSec((n) => n + 1), 1000);
+    return () => clearInterval(t);
+  }, []);
+  const m = String(Math.floor(sec / 60)).padStart(2, "0");
+  const s = String(sec % 60).padStart(2, "0");
+  return <small className="call-timer">{m}:{s}</small>;
+}
+
+function CallScreen({
+  caller,
+  answered,
+  avatar,
+  audioSrc,
+  onAccept,
+  onEnd,
+}: {
+  caller: string;
+  answered: boolean;
+  avatar?: string;
+  audioSrc: string | null;
+  onAccept: () => void;
+  onEnd: () => void;
+}) {
+  return (
+    <div className="call-screen">
+      <div className="call-header">
+        {avatar ? (
+          <img className="call-avatar" src={avatar} alt="" />
+        ) : (
+          <div className="call-avatar">{caller.slice(0, 1)}</div>
+        )}
+        <div className="call-header-info">
+          <strong>{caller}</strong>
+          {answered ? (
+            audioSrc ? <CallTimer /> : <small className="call-timer">通话中…</small>
+          ) : (
+            <small className="call-timer">正在呼叫…</small>
+          )}
+        </div>
+      </div>
+      <div className="call-spacer" />
+      {answered && audioSrc && <audio autoPlay src={audioSrc} />}
+      {answered ? (
+        <div className="call-grid">
+          <button className="call-opt"><Volume2 size={24} /><span>音频</span></button>
+          <button className="call-opt"><Video size={24} /><span>FaceTime 通话</span></button>
+          <button className="call-opt"><MicOff size={24} /><span>静音</span></button>
+          <button className="call-opt"><Plus size={24} /><span>更多</span></button>
+          <button className="call-opt call-end" onClick={onEnd}>
+            <PhoneIcon size={26} /><span>结束</span>
+          </button>
+          <button className="call-opt"><Grid size={24} /><span>拨号键盘</span></button>
+        </div>
+      ) : (
+        <>
+          <div className="call-grid-ring">
+            <button className="call-opt"><MessageCircle size={24} /><span>信息</span></button>
+            <button className="call-opt"><Voicemail size={24} /><span>语音留言</span></button>
+          </div>
+          <div className="call-actions-big">
+            <button className="call-decline" onClick={onEnd}>
+              <PhoneIcon size={30} />
+              <span>拒绝</span>
+            </button>
+            <button className="call-accept" onClick={onAccept}>
+              <PhoneIcon size={30} />
+              <span>接听</span>
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
 }
