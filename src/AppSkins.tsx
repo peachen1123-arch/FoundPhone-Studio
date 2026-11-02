@@ -347,19 +347,34 @@ export function WeChatSkin(p: SkinProps) {
             <span>朋友圈</span>
           </div>
           {posts.map((i) => (
-            <button
-              key={i.id}
-              className="wx-moment-post"
-              onClick={() => p.onItem(i)}
-            >
+            <div key={i.id} className="wx-moment-post">
               <Avatar name={i.sender} src={i.avatar} />
-              <div>
+              <div className="wx-moment-main">
                 <strong>{i.sender}</strong>
                 <p>{i.body}</p>
                 {i.media && <ItemMedia item={i} />}
-                <small>{i.time}</small>
+                <div className="wx-moment-foot">
+                  <small>{i.time}</small>
+                  <span className="wx-moment-more">··</span>
+                </div>
+                {!!i.comments?.length && (
+                  <div className="wx-moment-comments">
+                    {i.comments.map((c) => {
+                      const sep = c.search(/[:：]/);
+                      const who = sep > 0 ? c.slice(0, sep) : "";
+                      const text = sep > 0 ? c.slice(sep + 1) : c;
+                      return (
+                        <p key={c}>
+                          {who && <b>{who}</b>}
+                          {who ? "：" : ""}
+                          {text}
+                        </p>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
-            </button>
+            </div>
           ))}
           {!posts.length && <p className="skin-empty">暂无朋友圈动态</p>}
           {p.creator && (
@@ -420,7 +435,8 @@ export function WeChatSkin(p: SkinProps) {
                             groupAvatar || otherAvatar || last.avatar
                           }
                         />
-                        {!readThreads.includes(t) &&
+                        {t === "🐈‍⬛" &&
+                          !readThreads.includes(t) &&
                           !seenCount.includes(t) && (
                             <b className="wx-unread">1</b>
                           )}
