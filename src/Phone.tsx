@@ -1361,7 +1361,9 @@ function CallScreen({
         </div>
       </div>
       <div className="call-spacer" />
-      {answered && audioSrc && <audio autoPlay src={audioSrc} />}
+      {answered && audioSrc && (
+        <audio className="call-audio" autoPlay playsInline src={audioSrc} />
+      )}
       {answered ? (
         <div className="call-grid">
           <button className="call-opt"><Volume2 size={24} /><span>音频</span></button>
