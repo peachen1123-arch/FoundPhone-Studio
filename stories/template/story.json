@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 97,
+ "revision": 98,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -9754,6 +9754,128 @@
     "sun"
    ],
    "messages": [
+    {
+     "id": "msg-sun-x5",
+     "title": "",
+     "body": "恭喜出道🎉",
+     "time": "2025-12-27 21:10",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false,
+     "avatar": "media/av-sun.jpg"
+    },
+    {
+     "id": "msg-sun-x6",
+     "title": "",
+     "body": "謝謝孫哥",
+     "time": "2025-12-27 21:12",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x7",
+     "title": "",
+     "body": "孙哥",
+     "time": "2026-03-29 23:41",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x8",
+     "title": "",
+     "body": "练习室的门打不开",
+     "time": "2026-03-29 23:41",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x9",
+     "title": "",
+     "body": "好像是密码锁没电了",
+     "time": "2026-03-29 23:42",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x10",
+     "title": "",
+     "body": "在吗?",
+     "time": "2026-03-29 23:43",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x11",
+     "title": "",
+     "body": "救救",
+     "time": "2026-03-29 23:43",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x12",
+     "title": "",
+     "body": "昨天晚上睡了",
+     "time": "2026-03-30 07:55",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false,
+     "avatar": "media/av-sun.jpg"
+    },
+    {
+     "id": "msg-sun-x13",
+     "title": "",
+     "body": "你跟谁一起?",
+     "time": "2026-03-30 07:55",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false,
+     "avatar": "media/av-sun.jpg"
+    },
+    {
+     "id": "msg-sun-x14",
+     "title": "",
+     "body": "现在出来了吗",
+     "time": "2026-03-30 07:56",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false,
+     "avatar": "media/av-sun.jpg"
+    },
+    {
+     "id": "msg-sun-x15",
+     "title": "",
+     "body": "和林林",
+     "time": "2026-03-30 08:02",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x16",
+     "title": "",
+     "body": "没关系李梓豪给我们开门了",
+     "time": "2026-03-30 08:03",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-sun-x17",
+     "title": "",
+     "body": "我给公司说一下",
+     "time": "2026-03-30 08:05",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false,
+     "avatar": "media/av-sun.jpg"
+    },
     {
      "id": "msg-sun-0622-1",
      "title": "",
@@ -20853,6 +20975,56 @@
     "hidden": false,
     "avatar": "media/av-group.jpg",
     "comments": []
+   },
+   {
+    "id": "wx-moment-4",
+    "title": "",
+    "body": "너무 먹고 싶어",
+    "time": "2026-08-27 20:15",
+    "sender": "孫哥",
+    "kind": "post",
+    "folder": "朋友圈",
+    "likes": 0,
+    "likers": [
+     "11",
+     "🌰豪",
+     "亦辰哥",
+     "孫哥",
+     "suren",
+     "qctumnnn.zip",
+     "🐈‍⬛"
+    ],
+    "comments": [
+     "🐈‍⬛：哥要不我们早点睡呢",
+     "亦辰哥：减不减了到底"
+    ],
+    "avatar": "media/av-sun.jpg",
+    "media": "media/m-sun-skewer.jpg"
+   },
+   {
+    "id": "wx-moment-5",
+    "title": "",
+    "body": "卡面来打！！",
+    "time": "2026-10-08 19:40",
+    "sender": "🌰豪",
+    "kind": "post",
+    "folder": "朋友圈",
+    "likes": 0,
+    "likers": [
+     "11",
+     "亦辰哥",
+     "孫哥",
+     "suren",
+     "qctumnnn.zip",
+     "🐈‍⬛"
+    ],
+    "comments": [
+     "🌰豪：@所有人给我买mk9",
+     "suren：这人魔了",
+     "🐈‍⬛：去去还得是kabuto"
+    ],
+    "avatar": "media/av-hao.jpg",
+    "media": "media/m-hao-geats.jpg"
    }
   ]
  },
