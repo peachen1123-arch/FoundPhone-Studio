@@ -44,10 +44,12 @@ async function mediaIntact(data: unknown): Promise<boolean> {
   return results.every(Boolean);
 }
 
+const DATA_VERSION = "93";
+
 export async function loadWorkJson(): Promise<unknown> {
   // 优先拉新文件名（绕开 CDN 对旧 work.json.gz 的顽固缓存）
   try {
-    const r = await fetch("./app-data.gz");
+    const r = await fetch("./app-data.gz?v=" + DATA_VERSION);
     if (r.ok) {
       const data = await parseMaybeGzip(r);
       // 瘦身版依赖 media/ 静态资源；若资源缺失（部署不全/缓存异常），
@@ -58,12 +60,12 @@ export async function loadWorkJson(): Promise<unknown> {
     /* fall through */
   }
   try {
-    const r = await fetch("./work.json.gz");
+    const r = await fetch("./work.json.gz?v=" + DATA_VERSION);
     if (r.ok) return await parseMaybeGzip(r);
   } catch {
     /* fall back to plain json */
   }
-  const r = await fetch("./work.json");
+  const r = await fetch("./work.json?v=" + DATA_VERSION);
   if (!r.ok) throw Error("缺少 work.json");
   return r.json();
 }
