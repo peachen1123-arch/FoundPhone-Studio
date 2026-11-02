@@ -4894,75 +4894,110 @@ label {
 .wa-thread-profile > div {
   padding-left: 4px;
 }
-.incoming-call-screen {
+.call-screen {
   position: absolute;
   inset: 43px 0 20px;
   z-index: 58;
-  background: #35434ce8;
+  background: linear-gradient(180deg, #3a3a3cf2 0%, #1c1c1ef5 100%);
   color: #fff;
   backdrop-filter: blur(30px);
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding: 45px 23px 45px;
+  padding: 22px 26px 34px;
 }
-.incoming-call-screen > small {
-  color: #c2cbd0;
-  font-size: 10px;
+.call-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.incoming-avatar {
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
+.call-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  object-fit: cover;
   background: #899a9b;
-  color: #fff;
   display: grid;
   place-items: center;
-  font-size: 38px;
-  margin-top: 45px;
+  font-size: 26px;
+  flex: none;
 }
-.incoming-call-screen h2 {
-  font-size: 28px;
-  font-weight: 400;
-  margin-top: 23px;
+.call-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
-.incoming-call-screen > p {
-  font-size: 11px;
-  color: #bbc9ce;
-  line-height: 1.8;
-  margin-top: 25px;
+.call-header-info > strong {
+  font-size: 17px;
+  font-weight: 600;
 }
-.incoming-call-screen audio {
+.call-timer {
+  color: #b9b9be;
+  font-size: 12px;
+}
+.call-spacer {
+  flex: 1;
+}
+.call-grid,
+.call-grid-ring {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 26px;
   width: 100%;
-  margin-top: 30px;
+  justify-items: center;
 }
-.incoming-actions {
+.call-grid-ring {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+}
+.call-opt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  color: #fff;
+  font-size: 11px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.call-opt > svg {
+  width: 60px;
+  height: 60px;
+  padding: 17px;
+  border-radius: 50%;
+  background: #ffffff2b;
+  box-shadow: inset 0 1px 2px #ffffff22;
+}
+.call-opt.call-end > svg {
+  background: #ff3b30;
+  transform: rotate(135deg);
+}
+.call-actions-big {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  margin-top: auto;
   gap: 30px;
 }
-.incoming-actions > button {
+.call-actions-big > button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 13px;
+  gap: 11px;
   color: #fff;
   font-size: 12px;
   padding: 0;
 }
-.incoming-actions > button > svg {
-  width: 60px;
-  height: 60px;
-  padding: 18px;
+.call-actions-big > button > svg {
+  width: 66px;
+  height: 66px;
+  padding: 19px;
   border-radius: 50%;
-  background: #39bc6c;
+  background: #4cd964;
   box-shadow: inset 0 1px 2px #ffffff30;
 }
-.incoming-actions > .decline-call > svg {
-  background: #e34f58;
+.call-actions-big > .call-decline > svg {
+  background: #ff3b30;
   transform: rotate(135deg);
 }
 
