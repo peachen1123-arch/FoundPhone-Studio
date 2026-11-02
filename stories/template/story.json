@@ -10897,12 +10897,74 @@
   ],
   "weibo": [
    {
-    "id": "test-item-weibo",
-    "title": "測試內容",
-    "body": "這是一條測試內容。",
-    "sender": "测试用户",
+    "id": "wb-post-1",
+    "title": "",
+    "body": "造了港滇这么多黄谣，他们没有打我没有骂我，没有用冰冷的眼神看着我，也没有悄摸降大神咒死我，这是怎么一回事呢？这恐怕是真的。",
+    "sender": "我母菌子",
     "kind": "text",
-    "meta": {}
+    "media": "",
+    "time": "2026-04-13 21:47",
+    "avatar": "media/wb-av1.jpg",
+    "folder": "关注",
+    "meta": {},
+    "likes": 0,
+    "comments": []
+   },
+   {
+    "id": "wb-post-2",
+    "title": "",
+    "body": "你们不是说看港滇会上瘾吗，我天天看也没有啊",
+    "sender": "我父老港",
+    "kind": "text",
+    "media": "",
+    "time": "2026-05-18 14:02",
+    "avatar": "media/wb-av2.jpg",
+    "folder": "关注",
+    "meta": {},
+    "likes": 0,
+    "comments": []
+   },
+   {
+    "id": "wb-post-3",
+    "title": "",
+    "body": "【mo】你们有没有觉得ggg新更新的那组照片是ddd拍的...这角度这衣角。而且ggg这文案啥意思我不敢懂。",
+    "sender": "momo你咋了",
+    "kind": "text",
+    "media": "",
+    "time": "2026-02-15 23:10",
+    "avatar": "media/wb-av3.jpg",
+    "folder": "关注",
+    "meta": {},
+    "likes": 0,
+    "comments": []
+   },
+   {
+    "id": "wb-post-4",
+    "title": "",
+    "body": "【mo】我听说菌哥哥以前是混黑社会的，可吓人了，他腿上有什么纹身，好像是正正正正正。",
+    "sender": "momo你咋了",
+    "kind": "text",
+    "media": "",
+    "time": "2026-07-03 20:35",
+    "avatar": "media/wb-av3.jpg",
+    "folder": "关注",
+    "meta": {},
+    "likes": 0,
+    "comments": []
+   },
+   {
+    "id": "wb-post-5",
+    "title": "",
+    "body": "【mo】我流港滇",
+    "sender": "momo你咋了",
+    "kind": "image",
+    "media": "media/wb-meme.jpg",
+    "time": "2026-09-16 18:26",
+    "avatar": "media/wb-av3.jpg",
+    "folder": "关注",
+    "meta": {},
+    "likes": 0,
+    "comments": []
    }
   ],
   "redbook": [
@@ -21109,7 +21171,33 @@
      "value": "🐈‍⬛"
     }
    ]
+  },
+  {
+   "id": "evt-end",
+   "label": "临时结局",
+   "type": "event",
+   "event": "openApp",
+   "target": "notes",
+   "actions": [
+    {
+     "type": "ending",
+     "key": "",
+     "value": "临时结局"
+    }
+   ]
   }
  ],
- "tests": []
+ "tests": [
+  {
+   "name": "临时通关",
+   "steps": [
+    {
+     "event": "openApp",
+     "target": "notes"
+    }
+   ],
+   "ending": "临时结局",
+   "expectUnlocked": []
+  }
+ ]
 }
