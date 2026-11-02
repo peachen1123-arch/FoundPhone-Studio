@@ -109,11 +109,7 @@ export function WeiboSkin(p: Props) {
       </div>
       <div className="catalog-scroll">
         {tab === "我" ? (
-          <div className="weibo-profile">
-            <Avatar name={p.owner ?? "我"} src={safeMedia(p.ownerAvatar || "")} />
-            <h2>{p.owner ?? "我"}</h2>
-            <span>{items.length} 条微博</span>
-          </div>
+          <div className="weibo-profile" />
         ) : (
           <>
             <SearchBox value={q} set={setQ} />
