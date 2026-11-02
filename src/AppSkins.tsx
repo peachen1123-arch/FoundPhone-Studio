@@ -226,9 +226,10 @@ export function WeChatSkin(p: SkinProps) {
       ...p.items.map((i) => i.sender).filter((s) => s !== "我"),
     ]),
   ];
-  const posts = p.items.filter(
-    (i) => i.folder === "朋友圈" || i.kind === "post",
-  );
+  const posts = p.items
+    .filter((i) => i.folder === "朋友圈" || i.kind === "post")
+    .slice()
+    .sort((a, b) => b.time.localeCompare(a.time));
   return (
     <div
       className="wechat-ui independent-skin"
@@ -357,8 +358,24 @@ export function WeChatSkin(p: SkinProps) {
                   <small>{i.time}</small>
                   <span className="wx-moment-more">··</span>
                 </div>
-                {!!i.comments?.length && (
+                {(!!i.likers?.length || !!i.comments?.length) && (
                   <div className="wx-moment-comments">
+                    {!!i.likers?.length && (
+                      <div className="wx-moment-likes">
+                        <Heart size={13} />
+                        <p>
+                          {i.likers.map((n, li) => (
+                            <span key={n + li}>
+                              {li > 0 && "，"}
+                              <b>{n}</b>
+                            </span>
+                          ))}
+                        </p>
+                      </div>
+                    )}
+                    {!!i.likers?.length && !!i.comments?.length && (
+                      <div className="wx-moment-likes-divider" />
+                    )}
                     {i.comments.map((c) => {
                       const sep = c.search(/[:：]/);
                       const who = sep > 0 ? c.slice(0, sep) : "";
