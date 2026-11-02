@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 94,
+ "revision": 95,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -431,7 +431,7 @@
     {
      "id": "msg-grp-041",
      "title": "",
-     "body": "@Lynn 你快递到了我给你放桌子上了",
+     "body": "@🐈‍⬛ 你快递到了我给你放桌子上了",
      "time": "2026-01-07 15:12",
      "sender": "🌰豪",
      "senderId": "hao",
@@ -20785,7 +20785,7 @@
     "comments": [
      "🌰豪：也太早",
      "suren：轻轻松松熬到叔叔起床🫶",
-     "Lynn：xsr你挺狂?"
+     "🐈‍⬛：xsr你挺狂?"
     ],
     "avatar": "media/av-yichen.jpg"
    },
@@ -20826,7 +20826,8 @@
     "kind": "text",
     "folder": "群头像",
     "hidden": false,
-    "avatar": "media/av-group.jpg"
+    "avatar": "media/av-group.jpg",
+    "comments": []
    }
   ]
  },
