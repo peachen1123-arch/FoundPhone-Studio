@@ -5,7 +5,7 @@
   "description": "僅用於介面測試，不含劇情",
   "category": "互动手机故事",
   "cover": "",
-  "updatedAt": 93,
+  "updatedAt": 94,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -12414,6 +12414,27 @@
         "comments": [
           "11：我只是想要一只ganadi呀..."
         ]
+      },
+      {
+        "id": "wx-group-avatar",
+        "title": "在韩务工",
+        "body": "",
+        "richText": "",
+        "meta": {},
+        "time": "2025-12-27 21:03",
+        "sender": "在韩务工",
+        "avatar": "media/av-group.jpg",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "群头像",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
       },
       {
         "id": "msg-grp-001",
