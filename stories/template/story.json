@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 82,
+  "revision": 83,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -8894,6 +8894,24 @@
           "outgoing": true
         },
         {
+          "id": "msg-eleven-0101-1",
+          "title": "",
+          "body": "新年快乐～",
+          "time": "2026-01-01 00:03",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-0101-2",
+          "title": "",
+          "body": "新年快樂",
+          "time": "2026-01-01 00:05",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
           "id": "msg-eleven-0122-1",
           "title": "",
           "body": "生日快乐～",
@@ -8925,6 +8943,123 @@
           "title": "",
           "body": "来了！",
           "time": "2026-01-22 10:25",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0406-1",
+          "title": "",
+          "body": "你跟林林哥吵架了吗",
+          "time": "2026-04-06 21:12",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-0406-2",
+          "title": "",
+          "body": "怎么都看出来了",
+          "time": "2026-04-06 21:15",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0406-3",
+          "title": "",
+          "body": "他很好哄的！",
+          "time": "2026-04-06 21:16",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-0406-4",
+          "title": "",
+          "body": "这次可能",
+          "time": "2026-04-06 21:17",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0406-5",
+          "title": "",
+          "body": "不太好哄了",
+          "time": "2026-04-06 21:17",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0406-6",
+          "title": "",
+          "body": "你就用那种可爱的表情看着他",
+          "time": "2026-04-06 21:19",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-0406-7",
+          "title": "",
+          "body": "他会原谅你的",
+          "time": "2026-04-06 21:19",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-0406-8",
+          "title": "",
+          "body": "学到了",
+          "time": "2026-04-06 21:21",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0407-1",
+          "title": "",
+          "body": "范哲逸你是天才",
+          "time": "2026-04-07 22:33",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0407-2",
+          "title": "",
+          "body": "给你点了奶茶",
+          "time": "2026-04-07 22:33",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0407-3",
+          "title": "",
+          "body": "你喝吧使劲喝",
+          "time": "2026-04-07 22:34",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-0407-4",
+          "title": "",
+          "body": "？什么情况",
+          "time": "2026-04-07 22:37",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-0407-5",
+          "title": "",
+          "body": "以后灯都我去关",
+          "time": "2026-04-07 22:39",
           "sender": "qctumnnn",
           "senderId": "owner",
           "outgoing": true
@@ -9119,6 +9254,89 @@
           "sender": "qctumnnn",
           "senderId": "owner",
           "outgoing": true
+        }
+      ]
+    },
+    {
+      "id": "chat-hao",
+      "app": "wechat",
+      "title": "🌰豪",
+      "participants": [
+        "owner",
+        "hao"
+      ],
+      "messages": [
+        {
+          "id": "msg-hao-0101-1",
+          "title": "",
+          "body": "新年快乐",
+          "time": "2026-01-01 00:08",
+          "sender": "🌰豪",
+          "senderId": "hao",
+          "outgoing": false
+        },
+        {
+          "id": "msg-hao-0101-2",
+          "title": "",
+          "body": "新年快樂",
+          "time": "2026-01-01 00:10",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-hao-0330-1",
+          "title": "",
+          "body": "你俩神了啊关一晚上也不知道发个消息",
+          "time": "2026-03-30 08:41",
+          "sender": "🌰豪",
+          "senderId": "hao",
+          "outgoing": false
+        },
+        {
+          "id": "msg-hao-0330-2",
+          "title": "",
+          "body": "刚给孙哥发完手机就关机了",
+          "time": "2026-03-30 08:45",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-hao-0330-3",
+          "title": "",
+          "body": "林林的外套你给他带回去",
+          "time": "2026-03-30 08:46",
+          "sender": "🌰豪",
+          "senderId": "hao",
+          "outgoing": false
+        },
+        {
+          "id": "msg-hao-0330-4",
+          "title": "",
+          "body": "要不然你帮我给他？",
+          "time": "2026-03-30 08:47",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-hao-0330-5",
+          "title": "",
+          "body": "？",
+          "time": "2026-03-30 08:48",
+          "sender": "🌰豪",
+          "senderId": "hao",
+          "outgoing": false
+        },
+        {
+          "id": "msg-hao-0330-6",
+          "title": "",
+          "body": "也行吧",
+          "time": "2026-03-30 08:48",
+          "sender": "🌰豪",
+          "senderId": "hao",
+          "outgoing": false
         }
       ]
     }
