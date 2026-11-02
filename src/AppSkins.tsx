@@ -213,6 +213,7 @@ export function WeChatSkin(p: SkinProps) {
   const conversations = [
     ...new Set(
       p.items
+        .filter((i) => i.folder !== "朋友圈" && i.kind !== "post")
         .slice()
         .sort((a, b) => a.time.localeCompare(b.time))
         .reverse()
