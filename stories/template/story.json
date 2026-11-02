@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 96,
+ "revision": 97,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -520,7 +520,7 @@
     {
      "id": "msg-grp-038",
      "title": "",
-     "body": "孙哥你也跟着他们俩添乱atas？！",
+     "body": "孙哥你也跟着他们捣乱？！",
      "time": "2026-03-07 19:06",
      "sender": "11",
      "senderId": "eleven",
@@ -550,7 +550,7 @@
     {
      "id": "msg-grp-043",
      "title": "",
-     "body": "@。给你个跟我拍cha的机会",
+     "body": "@腰缠万代 给你个给我拍cha的机会",
      "time": "2026-03-26 20:31",
      "sender": "suren",
      "senderId": "suren",
@@ -20787,7 +20787,16 @@
      "suren：轻轻松松熬到叔叔起床🫶",
      "🐈‍⬛：xsr你挺狂?"
     ],
-    "avatar": "media/av-yichen.jpg"
+    "avatar": "media/av-yichen.jpg",
+    "likers": [
+     "11",
+     "🌰豪",
+     "亦辰哥",
+     "孫哥",
+     "suren",
+     "qctumnnn.zip",
+     "🐈‍⬛"
+    ]
    },
    {
     "id": "wx-moment-2",
@@ -20801,7 +20810,15 @@
     "comments": [
      "🌰豪：来"
     ],
-    "avatar": "media/av-suren.jpg"
+    "avatar": "media/av-suren.jpg",
+    "likers": [
+     "11",
+     "🌰豪",
+     "亦辰哥",
+     "孫哥",
+     "qctumnnn.zip",
+     "🐈‍⬛"
+    ]
    },
    {
     "id": "wx-moment-3",
@@ -20815,7 +20832,15 @@
     "comments": [
      "11：我只是想要一只ganadi呀..."
     ],
-    "avatar": "media/av-eleven.jpg"
+    "avatar": "media/av-eleven.jpg",
+    "likers": [
+     "🐈‍⬛",
+     "suren",
+     "亦辰哥",
+     "🌰豪",
+     "qctumnnn.zip",
+     "孫哥"
+    ]
    },
    {
     "id": "wx-group-avatar",
