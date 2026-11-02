@@ -33,6 +33,7 @@ export const itemSchema = z.object({
   outgoing: z.boolean().default(false),
   read: z.boolean().default(false),
   likes: z.number().default(0),
+  likers: z.array(z.string()).default([]),
   comments: z.array(z.string()).default([]),
 });
 export type Item = z.infer<typeof itemSchema>;
