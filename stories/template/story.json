@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "撿手機",
   "description": "僅用於介面測試，不含劇情",
-  "revision": 81,
+  "revision": 82,
   "phone": {
     "owner": "qctumnnn",
     "date": "2026-11-03",
@@ -8840,6 +8840,60 @@
       ],
       "messages": [
         {
+          "id": "msg-eleven-1227-1",
+          "title": "",
+          "body": "一起出道啦！",
+          "time": "2025-12-27 21:03",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-1227-2",
+          "title": "",
+          "body": "太好了你也出道了",
+          "time": "2025-12-27 21:03",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-1227-3",
+          "title": "",
+          "body": "我真的沒有想到過",
+          "time": "2025-12-27 21:06",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-1229-1",
+          "title": "",
+          "body": "早餐要吃嗎？我順便一起做了",
+          "time": "2025-12-29 08:12",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-eleven-1229-2",
+          "title": "",
+          "body": "不用了！我明天想出去吃",
+          "time": "2025-12-29 08:15",
+          "sender": "11",
+          "senderId": "eleven",
+          "outgoing": false
+        },
+        {
+          "id": "msg-eleven-1229-3",
+          "title": "",
+          "body": "👌",
+          "time": "2025-12-29 08:16",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
           "id": "msg-eleven-0122-1",
           "title": "",
           "body": "生日快乐～",
@@ -8886,6 +8940,150 @@
         "yichen"
       ],
       "messages": [
+        {
+          "id": "msg-yichen-0302-1",
+          "title": "",
+          "body": "需要药吗？我有很多",
+          "time": "2026-03-02 20:14",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0302-2",
+          "title": "",
+          "body": "谢谢哥，林林给我带了",
+          "time": "2026-03-02 20:20",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-yichen-0302-3",
+          "title": "",
+          "body": "他居然比我快",
+          "time": "2026-03-02 20:22",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0312-1",
+          "title": "",
+          "body": "哥你等会有事吗",
+          "time": "2026-03-12 15:02",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-yichen-0312-2",
+          "title": "",
+          "body": "要跟林林去吃饭来着",
+          "time": "2026-03-12 15:05",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0312-3",
+          "title": "",
+          "body": "怎么了",
+          "time": "2026-03-12 15:05",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0312-4",
+          "title": "",
+          "body": "经纪人哥说有事找你哎",
+          "time": "2026-03-12 15:07",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-yichen-0312-5",
+          "title": "",
+          "body": "虽然说明天去也行但是他看起来很急",
+          "time": "2026-03-12 15:08",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-yichen-0312-6",
+          "title": "",
+          "body": "那我还是去吧",
+          "time": "2026-03-12 15:10",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0312-7",
+          "title": "",
+          "body": "谢谢秋越",
+          "time": "2026-03-12 15:10",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0312-8",
+          "title": "",
+          "body": "没事的",
+          "time": "2026-03-12 15:12",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-yichen-0803-1",
+          "title": "",
+          "body": "你知道林林今天怎么了了吗",
+          "time": "2026-08-03 22:41",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-yichen-0803-2",
+          "title": "",
+          "body": "一直沉默",
+          "time": "2026-08-03 22:41",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
+        {
+          "id": "msg-yichen-0803-3",
+          "title": "",
+          "body": "我还以为你会比我更清楚",
+          "time": "2026-08-03 22:46",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0803-4",
+          "title": "",
+          "body": "应该是他爸爸和他妈妈又在吵了",
+          "time": "2026-08-03 22:46",
+          "sender": "亦辰哥",
+          "senderId": "yichen",
+          "outgoing": false
+        },
+        {
+          "id": "msg-yichen-0803-5",
+          "title": "",
+          "body": "我也以为我会清楚",
+          "time": "2026-08-03 22:49",
+          "sender": "qctumnnn",
+          "senderId": "owner",
+          "outgoing": true
+        },
         {
           "id": "msg-yichen-0924-1",
           "title": "",
