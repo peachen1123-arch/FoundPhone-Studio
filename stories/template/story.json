@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 86,
+ "revision": 87,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -644,6 +644,168 @@
      "title": "",
      "body": "哦哦",
      "time": "2026-05-17 21:05",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-058",
+     "title": "",
+     "body": "谁拼新牙膏",
+     "time": "2026-06-27 22:10",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-059",
+     "title": "",
+     "body": "这个牙膏我刷牙的时候老是干呕",
+     "time": "2026-06-27 22:10",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-060",
+     "title": "",
+     "body": "我拼🙌",
+     "time": "2026-06-27 22:11",
+     "sender": "11",
+     "senderId": "eleven",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-061",
+     "title": "",
+     "body": "我也可以",
+     "time": "2026-06-27 22:12",
+     "sender": "🐈‍⬛",
+     "senderId": "zhao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-062",
+     "title": "",
+     "body": "是咽炎？",
+     "time": "2026-06-27 22:13",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-grp-063",
+     "title": "",
+     "body": "你刷牙的时候别看镜子",
+     "time": "2026-06-27 22:14",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-064",
+     "title": "",
+     "body": "哎我们宿舍周边的外卖真的不怎么样",
+     "time": "2026-07-09 12:30",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-065",
+     "title": "",
+     "body": "咋了呀哥",
+     "time": "2026-07-09 12:31",
+     "sender": "11",
+     "senderId": "eleven",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-066",
+     "title": "",
+     "body": "吃出啥问题了吗",
+     "time": "2026-07-09 12:32",
+     "sender": "🐈‍⬛",
+     "senderId": "zhao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-067",
+     "title": "",
+     "body": "要不要去医院",
+     "time": "2026-07-09 12:33",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-grp-068",
+     "title": "",
+     "body": "你点啥了我避个雷",
+     "time": "2026-07-09 12:34",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-069",
+     "title": "",
+     "body": "沙拉",
+     "time": "2026-07-09 12:35",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-070",
+     "title": "",
+     "body": "...",
+     "time": "2026-07-09 12:36",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-071",
+     "title": "",
+     "body": "@腰缠万代",
+     "time": "2026-08-13 18:05",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-072",
+     "title": "",
+     "body": "你回来了吗?",
+     "time": "2026-08-13 18:05",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-073",
+     "title": "",
+     "body": "快到了",
+     "time": "2026-08-13 18:07",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-074",
+     "title": "",
+     "body": "要吃鸡腿吗",
+     "time": "2026-08-13 18:08",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false
+    },
+    {
+     "id": "msg-grp-075",
+     "title": "",
+     "body": "掉地上了?",
+     "time": "2026-08-13 18:09",
      "sender": "🌰豪",
      "senderId": "hao",
      "outgoing": false
