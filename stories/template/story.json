@@ -3,7 +3,7 @@
  "id": "ui-test-phone-v2",
  "title": "撿手機",
  "description": "僅用於介面測試，不含劇情",
- "revision": 92,
+ "revision": 93,
  "phone": {
   "owner": "qctumnnn",
   "date": "2026-11-03",
@@ -58,11 +58,8 @@
   "weibo",
   "redbook",
   "taobao",
-  "netease",
   "delivery",
   "tiktok",
-  "reddit",
-  "pinterest",
   "threads"
  ],
  "contacts": [
@@ -882,6 +879,213 @@
      "senderId": "hao",
      "outgoing": false,
      "avatar": "media/av-hao.jpg"
+    },
+    {
+     "id": "msg-grp-077",
+     "title": "",
+     "body": "@SUN 怎么一天都不回消息",
+     "time": "2026-09-11 21:10",
+     "sender": "亦辰哥",
+     "senderId": "yichen",
+     "outgoing": false,
+     "avatar": "media/av-yichen.jpg"
+    },
+    {
+     "id": "msg-grp-078",
+     "title": "",
+     "body": "抱歉我睡一天了没看到",
+     "time": "2026-09-11 21:12",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false,
+     "avatar": "media/av-sun.jpg"
+    },
+    {
+     "id": "msg-grp-079",
+     "title": "",
+     "body": "不舒服吗？",
+     "time": "2026-09-11 21:13",
+     "sender": "11",
+     "senderId": "eleven",
+     "outgoing": false,
+     "avatar": "media/av-eleven.jpg"
+    },
+    {
+     "id": "msg-grp-080",
+     "title": "",
+     "body": "太舒服了。",
+     "time": "2026-09-11 21:14",
+     "sender": "孫哥",
+     "senderId": "sun",
+     "outgoing": false,
+     "avatar": "media/av-sun.jpg"
+    },
+    {
+     "id": "msg-grp-081",
+     "title": "",
+     "body": "叔叔你梦游你知道吗",
+     "time": "2026-10-21 03:12",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false,
+     "avatar": "media/av-hao.jpg"
+    },
+    {
+     "id": "msg-grp-082",
+     "title": "",
+     "body": "大半夜的吓我一跳",
+     "time": "2026-10-21 03:12",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false,
+     "avatar": "media/av-hao.jpg"
+    },
+    {
+     "id": "msg-grp-083",
+     "title": "",
+     "body": "你为啥半夜不睡觉",
+     "time": "2026-10-21 03:13",
+     "sender": "11",
+     "senderId": "eleven",
+     "outgoing": false,
+     "avatar": "media/av-eleven.jpg"
+    },
+    {
+     "id": "msg-grp-084",
+     "title": "",
+     "body": "他偷吃了半份炸鸡",
+     "time": "2026-10-21 03:14",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false,
+     "avatar": "media/av-suren.jpg"
+    },
+    {
+     "id": "msg-grp-085",
+     "title": "",
+     "body": "你咋知道了",
+     "time": "2026-10-21 03:15",
+     "sender": "🐈‍⬛",
+     "senderId": "zhao",
+     "outgoing": false,
+     "avatar": "media/av-zhao.jpg"
+    },
+    {
+     "id": "msg-grp-086",
+     "title": "",
+     "body": "因为另外半份是他吃的",
+     "time": "2026-10-21 03:16",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false,
+     "avatar": "media/av-hao.jpg"
+    },
+    {
+     "id": "msg-grp-087",
+     "title": "",
+     "body": "我梦游干啥了",
+     "time": "2026-10-21 08:30",
+     "sender": "亦辰哥",
+     "senderId": "yichen",
+     "outgoing": false,
+     "avatar": "media/av-yichen.jpg"
+    },
+    {
+     "id": "msg-grp-088",
+     "title": "",
+     "body": "你把肉丸的衣服塞洗衣机了",
+     "time": "2026-10-21 08:31",
+     "sender": "🌰豪",
+     "senderId": "hao",
+     "outgoing": false,
+     "avatar": "media/av-hao.jpg"
+    },
+    {
+     "id": "msg-grp-089",
+     "title": "",
+     "body": "我的？",
+     "time": "2026-10-21 08:32",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-grp-090",
+     "title": "",
+     "body": "我就说怎么找不到了",
+     "time": "2026-10-21 08:32",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-grp-091",
+     "title": "",
+     "body": "没事刚好帮你洗了",
+     "time": "2026-10-21 08:33",
+     "sender": "11",
+     "senderId": "eleven",
+     "outgoing": false,
+     "avatar": "media/av-eleven.jpg"
+    },
+    {
+     "id": "msg-grp-092",
+     "title": "",
+     "body": "你衣服啥颜色的",
+     "time": "2026-10-21 08:34",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false,
+     "avatar": "media/av-suren.jpg"
+    },
+    {
+     "id": "msg-grp-093",
+     "title": "",
+     "body": "黄色",
+     "time": "2026-10-21 08:35",
+     "sender": "qctumnnn",
+     "senderId": "owner",
+     "outgoing": true
+    },
+    {
+     "id": "msg-grp-094",
+     "title": "",
+     "body": "我去 我一洗衣机白衣服",
+     "time": "2026-10-21 08:36",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false,
+     "avatar": "media/av-suren.jpg"
+    },
+    {
+     "id": "msg-grp-095",
+     "title": "",
+     "body": "哦哦对不起。",
+     "time": "2026-10-21 08:37",
+     "sender": "亦辰哥",
+     "senderId": "yichen",
+     "outgoing": false,
+     "avatar": "media/av-yichen.jpg"
+    },
+    {
+     "id": "msg-grp-096",
+     "title": "",
+     "body": "我也是直接原谅你好吧",
+     "time": "2026-10-21 08:38",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false,
+     "avatar": "media/av-suren.jpg"
+    },
+    {
+     "id": "msg-grp-097",
+     "title": "",
+     "body": "还没染色",
+     "time": "2026-10-21 08:38",
+     "sender": "suren",
+     "senderId": "suren",
+     "outgoing": false,
+     "avatar": "media/av-suren.jpg"
     }
    ]
   },
@@ -12141,16 +12345,6 @@
     }
    }
   ],
-  "netease": [
-   {
-    "id": "test-item-netease",
-    "title": "測試內容",
-    "body": "這是一條測試內容。",
-    "sender": "测试用户",
-    "kind": "text",
-    "meta": {}
-   }
-  ],
   "delivery": [
    {
     "id": "test-item-delivery",
@@ -19402,26 +19596,6 @@
     }
    }
   ],
-  "reddit": [
-   {
-    "id": "test-item-reddit",
-    "title": "測試內容",
-    "body": "這是一條測試內容。",
-    "sender": "测试用户",
-    "kind": "text",
-    "meta": {}
-   }
-  ],
-  "pinterest": [
-   {
-    "id": "test-item-pinterest",
-    "title": "測試內容",
-    "body": "這是一條測試內容。",
-    "sender": "测试用户",
-    "kind": "text",
-    "meta": {}
-   }
-  ],
   "threads": [
    {
     "id": "tr-neverfall-01",
@@ -20596,6 +20770,52 @@
     "id": "test-appstore",
     "title": "測試內容",
     "body": "這是一條測試內容。"
+   }
+  ],
+  "wechat": [
+   {
+    "id": "wx-moment-1",
+    "title": "",
+    "body": "☀️",
+    "time": "2026-03-18 07:32",
+    "sender": "亦辰哥",
+    "kind": "post",
+    "folder": "朋友圈",
+    "likes": 7,
+    "comments": [
+     "🌰豪：也太早",
+     "suren：轻轻松松熬到叔叔起床🫶",
+     "Lynn：xsr你挺狂?"
+    ],
+    "avatar": "media/av-yichen.jpg"
+   },
+   {
+    "id": "wx-moment-2",
+    "title": "",
+    "body": "谁瓦",
+    "time": "2026-04-16 20:13",
+    "sender": "suren",
+    "kind": "post",
+    "folder": "朋友圈",
+    "likes": 6,
+    "comments": [
+     "🌰豪：来"
+    ],
+    "avatar": "media/av-suren.jpg"
+   },
+   {
+    "id": "wx-moment-3",
+    "title": "",
+    "body": "谁能给我代购一只ganadi...",
+    "time": "2026-05-10 18:43",
+    "sender": "11",
+    "kind": "post",
+    "folder": "朋友圈",
+    "likes": 6,
+    "comments": [
+     "11：我只是想要一只ganadi呀..."
+    ],
+    "avatar": "media/av-eleven.jpg"
    }
   ]
  },
